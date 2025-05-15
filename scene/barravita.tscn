@@ -1,0 +1,50 @@
+[gd_scene load_steps=4 format=3 uid="uid://cuphavb61y62u"]
+
+[ext_resource type="Script" uid="uid://dr4rcf1y0ui4d" path="res://script/barravita.gd" id="1_i0rrv"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qek7s"]
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.6, 0.6, 0.6, 1)
+border_blend = true
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 1
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i0rrv"]
+bg_color = Color(0.211765, 0.85098, 0.262745, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.211765, 0.85098, 0.262745, 1)
+border_blend = true
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[node name="ProgressBar" type="ProgressBar"]
+anchors_preset = -1
+anchor_left = 0.527
+anchor_top = 0.496
+anchor_right = 0.527
+anchor_bottom = 0.496
+offset_left = -199.94
+offset_top = -23.88
+offset_right = 200.06
+offset_bottom = 24.12
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 4
+theme_override_styles/background = SubResource("StyleBoxFlat_qek7s")
+theme_override_styles/fill = SubResource("StyleBoxFlat_i0rrv")
+value = 100.0
+show_percentage = false
+script = ExtResource("1_i0rrv")
+
+[connection signal="value_changed" from="." to="." method="_on_value_changed"]

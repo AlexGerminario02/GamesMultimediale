@@ -1,0 +1,38 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://bfo5m5qdgmhj5"
+path.s3tc="res://.godot/imported/yaourt_yaourt_roughness.png-eb1476b19cae9651bcd5c92d382a33a0.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+generator_parameters={
+"md5": "6b9ce5629f593a18373708a5daaec07f"
+}
+
+[deps]
+
+source_file="res://kitchen food gltf/yaourt_yaourt_roughness.png"
+dest_files=["res://.godot/imported/yaourt_yaourt_roughness.png-eb1476b19cae9651bcd5c92d382a33a0.s3tc.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0

@@ -1,0 +1,170 @@
+[gd_scene load_steps=15 format=3 uid="uid://bqqyxsg5ruas7"]
+
+[ext_resource type="Script" uid="uid://dlphdji8xi84i" path="res://script/menu_principale.gd" id="1_6ob8s"]
+[ext_resource type="Texture2D" uid="uid://wjbr8rl8ams0" path="res://materials/Progetto senza titolo (1).png" id="1_xhhi6"]
+[ext_resource type="FontFile" uid="uid://bjmfgovkx7cju" path="res://materials/SuperLobster.ttf" id="2_6ob8s"]
+[ext_resource type="FontFile" uid="uid://dbov3l412oum1" path="res://materials/Super Lobster.ttf" id="3_naq42"]
+[ext_resource type="PackedScene" uid="uid://cgor1opkcsnqw" path="res://scene/options_menu.tscn" id="5_naq42"]
+[ext_resource type="Texture2D" uid="uid://bqdi4r03efm15" path="res://materials/40e4425fc69645b70fbe78a1d814ee93-removebg-preview.png" id="5_seno8"]
+[ext_resource type="AudioStream" uid="uid://s48a7nbrlqx" path="res://Music/Feast-Dash.ogg" id="6_4qw8r"]
+[ext_resource type="PackedScene" uid="uid://ei0gt35qrh21" path="res://scene/levels_menu.tscn" id="8_v33tj"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_v33tj"]
+texture = ExtResource("5_seno8")
+region_rect = Rect2(295, 150, 253, 79)
+modulate_color = Color(0.62, 0.62, 0.62, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_elgs4"]
+texture = ExtResource("5_seno8")
+region_rect = Rect2(295, 149.78, 253, 79.25)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_seno8"]
+texture = ExtResource("5_seno8")
+region_rect = Rect2(295, 150, 253, 79)
+modulate_color = Color(0.619608, 0.619608, 0.619608, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6aw75"]
+texture = ExtResource("5_seno8")
+region_rect = Rect2(295, 150, 253, 79)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_omdi7"]
+texture = ExtResource("5_seno8")
+region_rect = Rect2(295, 150, 253, 79)
+modulate_color = Color(0.619608, 0.619608, 0.619608, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_egqni"]
+texture = ExtResource("5_seno8")
+region_rect = Rect2(295, 150, 253, 79)
+
+[node name="Menu_principale" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6ob8s")
+start_level = null
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_xhhi6")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 200
+
+[node name="Separator" type="Control" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(5, 0)
+layout_mode = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 8
+theme_override_constants/shadow_offset_y = 8
+theme_override_constants/outline_size = 15
+theme_override_constants/shadow_outline_size = 5
+theme_override_fonts/font = ExtResource("2_6ob8s")
+theme_override_font_sizes/font_size = 90
+text = "Gluten Runner"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 40
+alignment = 1
+
+[node name="Separator2" type="Control" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Start_Button" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(250, 32)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("3_naq42")
+theme_override_font_sizes/font_size = 45
+theme_override_styles/hover = SubResource("StyleBoxTexture_v33tj")
+theme_override_styles/normal = SubResource("StyleBoxTexture_elgs4")
+action_mode = 0
+text = "START GAME"
+
+[node name="Option_Button" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(250, 32)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("3_naq42")
+theme_override_font_sizes/font_size = 45
+theme_override_styles/hover = SubResource("StyleBoxTexture_seno8")
+theme_override_styles/normal = SubResource("StyleBoxTexture_6aw75")
+action_mode = 0
+text = "OPTIONS"
+
+[node name="Levels" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(250, 32)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("3_naq42")
+theme_override_font_sizes/font_size = 45
+theme_override_styles/hover = SubResource("StyleBoxTexture_omdi7")
+theme_override_styles/normal = SubResource("StyleBoxTexture_egqni")
+action_mode = 0
+text = "LEVELS"
+
+[node name="Credits" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(250, 32)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("3_naq42")
+theme_override_font_sizes/font_size = 45
+theme_override_styles/hover = SubResource("StyleBoxTexture_omdi7")
+theme_override_styles/normal = SubResource("StyleBoxTexture_egqni")
+action_mode = 0
+text = "CREDITS"
+
+[node name="Exit_Button" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(250, 32)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("3_naq42")
+theme_override_font_sizes/font_size = 45
+theme_override_styles/hover = SubResource("StyleBoxTexture_omdi7")
+theme_override_styles/normal = SubResource("StyleBoxTexture_egqni")
+action_mode = 0
+text = "EXIT GAME"
+
+[node name="Options_Menu" parent="." instance=ExtResource("5_naq42")]
+visible = false
+layout_mode = 1
+
+[node name="Levels_menu" parent="." instance=ExtResource("8_v33tj")]
+visible = false
+layout_mode = 1
+
+[node name="MusicStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_4qw8r")
+autoplay = true
+bus = &"Musics"

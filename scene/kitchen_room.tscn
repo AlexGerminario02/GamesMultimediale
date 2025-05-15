@@ -1,0 +1,1054 @@
+[gd_scene load_steps=35 format=3 uid="uid://d2dl031ir42pe"]
+
+[ext_resource type="PackedScene" uid="uid://b7sio3j07f3su" path="res://kitchen gltf items/fridge_A_decorated.gltf" id="1_aa3lv"]
+[ext_resource type="Script" uid="uid://bqsycidg3o2x4" path="res://script/kitchen_room.gd" id="1_mdnvx"]
+[ext_resource type="PackedScene" uid="uid://d4hiw6xbu10ah" path="res://kitchen gltf items/kitchencabinet.gltf" id="2_mdnvx"]
+[ext_resource type="PackedScene" uid="uid://ccryuhfw7sgxw" path="res://kitchen gltf items/kitchencabinet_corner.gltf" id="3_tucwl"]
+[ext_resource type="PackedScene" uid="uid://dbuuut0ck8igm" path="res://kitchen gltf items/kitchencabinet_half.gltf" id="4_1d6qk"]
+[ext_resource type="PackedScene" uid="uid://osytqo0wchm6" path="res://kitchen gltf items/kitchencounter_innercorner.gltf" id="5_a1bk8"]
+[ext_resource type="PackedScene" uid="uid://d151chrqgylmo" path="res://kitchen gltf items/kitchencounter_straight_A.gltf" id="6_jt37n"]
+[ext_resource type="PackedScene" uid="uid://bnk6gqtoiyjdb" path="res://kitchen gltf items/kitchencounter_straight_decorated.gltf" id="7_eirw2"]
+[ext_resource type="PackedScene" uid="uid://cahfrjxadxfo4" path="res://kitchen gltf items/kitchencounter_outercorner.gltf" id="8_5sam7"]
+[ext_resource type="PackedScene" uid="uid://bwl2lto4wvbbe" path="res://kitchen gltf items/kitchencounter_sink.gltf" id="9_8i6o8"]
+[ext_resource type="PackedScene" uid="uid://def4foqk7p3rt" path="res://kitchen gltf items/kitchencounter_straight_A_decorated.gltf" id="10_fyxfv"]
+[ext_resource type="PackedScene" uid="uid://clolim4367b2n" path="res://kitchen gltf items/mustard.gltf" id="11_1x7l4"]
+[ext_resource type="PackedScene" uid="uid://cjct01su8odsd" path="res://kitchen gltf items/kitchentable_A.gltf" id="12_f8nnx"]
+[ext_resource type="PackedScene" uid="uid://cx4m6do3qsua3" path="res://kitchen gltf items/kitchentable_A_large_decorated.gltf" id="13_e1xq3"]
+[ext_resource type="PackedScene" uid="uid://bt1xh3kdi0ie7" path="res://kitchen gltf items/kitchentable_sink.gltf" id="14_f8yui"]
+[ext_resource type="PackedScene" uid="uid://dmqti35yi0dih" path="res://kitchen gltf items/kitchentable_sink_large_decorated.gltf" id="15_svdsb"]
+[ext_resource type="PackedScene" uid="uid://58mjatiss3qr" path="res://kitchen gltf items/lid_large.gltf" id="16_vsc6e"]
+[ext_resource type="PackedScene" uid="uid://d255ivevkryfn" path="res://kitchen gltf items/menu.gltf" id="17_1mped"]
+[ext_resource type="PackedScene" uid="uid://bw8g4cp4p0uvl" path="res://kitchen gltf items/lid_A.gltf" id="18_fssf6"]
+[ext_resource type="PackedScene" uid="uid://b0efwws85ln7v" path="res://kitchen gltf items/oven.gltf" id="19_hwmuk"]
+[ext_resource type="PackedScene" uid="uid://dkl425xqq0kti" path="res://kitchen gltf items/pan_006.gltf" id="20_c6in1"]
+[ext_resource type="PackedScene" uid="uid://ei4d5c2vsfpr" path="res://kitchen gltf items/pan_A.gltf" id="21_wl7ic"]
+[ext_resource type="PackedScene" uid="uid://djaolux13jmoq" path="res://kitchen gltf items/papertowel.gltf" id="22_5ubd5"]
+[ext_resource type="PackedScene" uid="uid://dyfg1ugco1v0m" path="res://kitchen gltf items/pillar_A.gltf" id="23_hcdel"]
+[ext_resource type="PackedScene" uid="uid://ckdo1pbcdp8m2" path="res://kitchen gltf items/plate.gltf" id="24_vkk1f"]
+[ext_resource type="PackedScene" uid="uid://01nel5cu8wp" path="res://kitchen gltf items/shelf_papertowel.gltf" id="25_0qgm4"]
+[ext_resource type="PackedScene" uid="uid://bhk11qnq0v03l" path="res://kitchen gltf items/stove_multi.gltf" id="26_up66c"]
+[ext_resource type="PackedScene" uid="uid://bpymp3vbe8ata" path="res://kitchen gltf items/pot_B_stew.gltf" id="27_esr7a"]
+[ext_resource type="PackedScene" uid="uid://bxmhunlo4xnon" path="res://kitchen gltf items/towelrail.gltf" id="28_ss4ix"]
+[ext_resource type="PackedScene" uid="uid://xqpxh2oxfrmn" path="res://kitchen gltf items/wall_orderwindow_decorated.gltf" id="29_bgpxs"]
+[ext_resource type="PackedScene" uid="uid://cew10qeoru3p2" path="res://kitchen gltf items/wall.gltf" id="30_jpgqt"]
+[ext_resource type="PackedScene" uid="uid://cyemps3fs1vyh" path="res://kitchen gltf items/wall_window_open.gltf" id="31_0nbab"]
+[ext_resource type="PackedScene" uid="uid://bpjdhnah6v37k" path="res://kitchen gltf items/wall_decorated.gltf" id="32_wnemg"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_aa3lv"]
+size = Vector3(1, 1, 0.673828)
+
+[node name="Node3D" type="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.0026238)
+script = ExtResource("1_mdnvx")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(146.93, 0, 0, 0, 5.86, 0, 0, 0, 17.44, 0, 2.28, 0)
+shape = SubResource("BoxShape3D_aa3lv")
+
+[node name="fridge_A_decorated2" parent="CollisionShape3D" instance=ExtResource("1_aa3lv")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.10301, -0.389078, -0.22)
+
+[node name="fridge_A_decorated3" parent="CollisionShape3D" instance=ExtResource("1_aa3lv")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.0367773, -0.389078, -0.22)
+
+[node name="kitchencabinet2" parent="CollisionShape3D" instance=ExtResource("2_mdnvx")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.0851698, -0.53753, -0.22)
+
+[node name="kitchencabinet3" parent="CollisionShape3D" instance=ExtResource("2_mdnvx")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.0413379, -0.47903, -0.22)
+
+[node name="kitchencabinet_corner2" parent="CollisionShape3D" instance=ExtResource("3_tucwl")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.0711425, -0.544512, -0.22)
+
+[node name="kitchencabinet_half2" parent="CollisionShape3D" instance=ExtResource("4_1d6qk")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.116633, -0.527438, -0.22)
+
+[node name="kitchencounter_innercorner2" parent="CollisionShape3D" instance=ExtResource("5_a1bk8")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.117241, -0.389078, -0.22)
+
+[node name="kitchencabinet_half4" parent="CollisionShape3D" instance=ExtResource("4_1d6qk")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.0272793, -0.507334, -0.22)
+
+[node name="kitchencabinet_half3" parent="CollisionShape3D" instance=ExtResource("4_1d6qk")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.000951871, -0.496454, -0.22)
+
+[node name="kitchencabinet4" parent="CollisionShape3D" instance=ExtResource("2_mdnvx")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.0651258, -0.391043, -0.22)
+
+[node name="kitchencabinet_half5" parent="CollisionShape3D" instance=ExtResource("4_1d6qk")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.0791844, -0.515103, -0.22)
+
+[node name="kitchencounter_innercorner4" parent="CollisionShape3D" instance=ExtResource("5_a1bk8")]
+transform = Transform3D(-2.97498e-10, 0, 0.00680596, 0, 0.170648, 0, -0.0573394, 0, -2.50639e-09, 0.0652087, -0.396847, -0.22)
+
+[node name="kitchencounter_straight_A3" parent="CollisionShape3D" instance=ExtResource("6_jt37n")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.0792454, -0.396847, -0.22)
+
+[node name="kitchencounter_straight_decorated3" parent="CollisionShape3D" instance=ExtResource("7_eirw2")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.0932841, -0.396847, -0.22)
+
+[node name="kitchencounter_outercorner2" parent="CollisionShape3D" instance=ExtResource("8_5sam7")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.0698656, -0.389078, -0.22)
+
+[node name="kitchencounter_innercorner3" parent="CollisionShape3D" instance=ExtResource("5_a1bk8")]
+transform = Transform3D(-2.97498e-10, 0, 0.00680596, 0, 0.170648, 0, -0.0573394, 0, -2.50639e-09, -0.0412549, -0.389078, -0.22)
+
+[node name="kitchencounter_sink2" parent="CollisionShape3D" instance=ExtResource("9_8i6o8")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.0553114, -0.389078, -0.22)
+
+[node name="kitchencounter_straight_A2" parent="CollisionShape3D" instance=ExtResource("6_jt37n")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.0272183, -0.389078, -0.22)
+
+[node name="kitchencounter_straight_A_decorated2" parent="CollisionShape3D" instance=ExtResource("10_fyxfv")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.13147, -0.389079, -0.22)
+
+[node name="mustard3" parent="CollisionShape3D" instance=ExtResource("11_1x7l4")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.0445808, -0.221267, -0.22)
+
+[node name="kitchencounter_straight_decorated2" parent="CollisionShape3D" instance=ExtResource("7_eirw2")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.0131795, -0.389078, -0.22)
+
+[node name="kitchentable_A2" parent="CollisionShape3D" instance=ExtResource("12_f8nnx")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.0012493, -0.389078, -0.22)
+
+[node name="kitchentable_A_large_decorated2" parent="CollisionShape3D" instance=ExtResource("13_e1xq3")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.018822, -0.389078, -0.22)
+
+[node name="kitchentable_sink2" parent="CollisionShape3D" instance=ExtResource("14_f8yui")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.0510625, -0.389078, -0.22)
+
+[node name="kitchentable_sink_large_decorated2" parent="CollisionShape3D" instance=ExtResource("15_svdsb")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.110826, -0.38668, -0.22)
+
+[node name="lid_large2" parent="CollisionShape3D" instance=ExtResource("16_vsc6e")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.0757113, -0.230185, -0.22)
+
+[node name="menu2" parent="CollisionShape3D" instance=ExtResource("17_1mped")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.0674001, -0.221289, -0.22)
+
+[node name="lid_A2" parent="CollisionShape3D" instance=ExtResource("18_fssf6")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.00299253, -0.222889, -0.22)
+
+[node name="mustard2" parent="CollisionShape3D" instance=ExtResource("11_1x7l4")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.00146104, -0.220218, -0.22)
+
+[node name="lid_A3" parent="CollisionShape3D" instance=ExtResource("18_fssf6")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.030193, -0.229338, -0.22)
+
+[node name="oven2" parent="CollisionShape3D" instance=ExtResource("19_hwmuk")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.12802, -0.408014, -0.22)
+
+[node name="kitchencabinet_half6" parent="CollisionShape3D" instance=ExtResource("4_1d6qk")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.142435, -0.527438, -0.22)
+
+[node name="kitchencounter_innercorner5" parent="CollisionShape3D" instance=ExtResource("5_a1bk8")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.141827, -0.389078, -0.22)
+
+[node name="kitchencounter_innercorner6" parent="CollisionShape3D" instance=ExtResource("5_a1bk8")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.156271, -0.389078, -0.22)
+
+[node name="pan_0062" parent="CollisionShape3D" instance=ExtResource("20_c6in1")]
+transform = Transform3D(0.00527582, 0, 0.00429963, 0, 0.170648, 0, -0.0362239, 0, 0.0444482, 0.141421, -0.223532, -0.22)
+
+[node name="pan_A2" parent="CollisionShape3D" instance=ExtResource("21_wl7ic")]
+transform = Transform3D(-0.00362033, -0.00390484, 0.00423869, 0.0039272, 0.12379, 0.117394, -0.0485362, 0.0218044, -0.0213686, 0.132037, -0.0270921, -0.22)
+
+[node name="papertowel2" parent="CollisionShape3D" instance=ExtResource("22_5ubd5")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.0349348, 0.0409698, -0.22)
+
+[node name="pillar_A2" parent="CollisionShape3D" instance=ExtResource("23_hcdel")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.0940806, -0.406578, -0.22)
+
+[node name="plate3" parent="CollisionShape3D" instance=ExtResource("24_vkk1f")]
+transform = Transform3D(0.00400282, -0.00239839, 0.00495442, 0.0877091, 0.146383, 2.13139e-09, -0.0358051, 0.0214535, 0.0393135, -0.0988346, 0.0705268, -0.22)
+
+[node name="plate2" parent="CollisionShape3D" instance=ExtResource("24_vkk1f")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.0388313, -0.21662, -0.22)
+
+[node name="shelf_papertowel2" parent="CollisionShape3D" instance=ExtResource("25_0qgm4")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.110888, 0.191579, -0.22)
+
+[node name="stove_multi2" parent="CollisionShape3D" instance=ExtResource("26_up66c")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.156148, -0.231126, -0.22)
+
+[node name="pot_B_stew2" parent="CollisionShape3D" instance=ExtResource("27_esr7a")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.159942, -0.0354232, -0.22)
+
+[node name="towelrail2" parent="CollisionShape3D" instance=ExtResource("28_ss4ix")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.141794, -0.376826, -0.22)
+
+[node name="wall_orderwindow_decorated2" parent="CollisionShape3D" instance=ExtResource("29_bgpxs")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.0152372, -0.389078, -0.22)
+
+[node name="wall4" parent="CollisionShape3D" instance=ExtResource("30_jpgqt")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.0393441, -0.389078, -0.22)
+
+[node name="wall2" parent="CollisionShape3D" instance=ExtResource("30_jpgqt")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.0121274, -0.389078, -0.22)
+
+[node name="wall5" parent="CollisionShape3D" instance=ExtResource("30_jpgqt")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.121652, -0.389078, -0.22)
+
+[node name="wall3" parent="CollisionShape3D" instance=ExtResource("30_jpgqt")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.0702091, -0.389078, -0.22)
+
+[node name="wall_orderwindow_decorated3" parent="CollisionShape3D" instance=ExtResource("29_bgpxs")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.0975736, -0.389078, -0.22)
+
+[node name="wall_window_open3" parent="CollisionShape3D" instance=ExtResource("31_0nbab")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.125036, -0.389078, -0.22)
+
+[node name="fridge_A_decorated8" parent="CollisionShape3D" instance=ExtResource("1_aa3lv")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.101072, -0.403517, 0.22)
+
+[node name="fridge_A_decorated9" parent="CollisionShape3D" instance=ExtResource("1_aa3lv")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.0387147, -0.403517, 0.22)
+
+[node name="kitchencabinet11" parent="CollisionShape3D" instance=ExtResource("2_mdnvx")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.0832323, -0.551969, 0.22)
+
+[node name="kitchencabinet12" parent="CollisionShape3D" instance=ExtResource("2_mdnvx")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.0394004, -0.493469, 0.22)
+
+[node name="kitchencabinet_corner5" parent="CollisionShape3D" instance=ExtResource("3_tucwl")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.069205, -0.558951, 0.22)
+
+[node name="kitchencabinet_half17" parent="CollisionShape3D" instance=ExtResource("4_1d6qk")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.114695, -0.541877, 0.22)
+
+[node name="kitchencounter_innercorner17" parent="CollisionShape3D" instance=ExtResource("5_a1bk8")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.115303, -0.403517, 0.22)
+
+[node name="kitchencabinet_half18" parent="CollisionShape3D" instance=ExtResource("4_1d6qk")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.0253418, -0.521773, 0.22)
+
+[node name="kitchencabinet_half19" parent="CollisionShape3D" instance=ExtResource("4_1d6qk")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.00288933, -0.510893, 0.22)
+
+[node name="kitchencabinet13" parent="CollisionShape3D" instance=ExtResource("2_mdnvx")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.0670632, -0.405481, 0.22)
+
+[node name="kitchencabinet_half20" parent="CollisionShape3D" instance=ExtResource("4_1d6qk")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.0811218, -0.529541, 0.22)
+
+[node name="kitchencounter_innercorner18" parent="CollisionShape3D" instance=ExtResource("5_a1bk8")]
+transform = Transform3D(8.92494e-10, 0, -0.00680596, 0, 0.170648, 0, 0.0573394, 0, 7.51916e-09, -0.0671462, -0.411285, 0.22)
+
+[node name="kitchencounter_straight_A8" parent="CollisionShape3D" instance=ExtResource("6_jt37n")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.0811828, -0.411285, 0.22)
+
+[node name="kitchencounter_straight_decorated8" parent="CollisionShape3D" instance=ExtResource("7_eirw2")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.0952216, -0.411285, 0.22)
+
+[node name="kitchencounter_outercorner5" parent="CollisionShape3D" instance=ExtResource("8_5sam7")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.0679281, -0.403517, 0.22)
+
+[node name="kitchencounter_innercorner19" parent="CollisionShape3D" instance=ExtResource("5_a1bk8")]
+transform = Transform3D(8.92494e-10, 0, -0.00680596, 0, 0.170648, 0, 0.0573394, 0, 7.51916e-09, 0.0393174, -0.403517, 0.22)
+
+[node name="kitchencounter_sink5" parent="CollisionShape3D" instance=ExtResource("9_8i6o8")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.0533739, -0.403517, 0.22)
+
+[node name="kitchencounter_straight_A9" parent="CollisionShape3D" instance=ExtResource("6_jt37n")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.0252808, -0.403517, 0.22)
+
+[node name="kitchencounter_straight_A_decorated5" parent="CollisionShape3D" instance=ExtResource("10_fyxfv")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.129533, -0.403517, 0.22)
+
+[node name="mustard8" parent="CollisionShape3D" instance=ExtResource("11_1x7l4")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.0426433, -0.235706, 0.22)
+
+[node name="kitchencounter_straight_decorated9" parent="CollisionShape3D" instance=ExtResource("7_eirw2")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.0112421, -0.403517, 0.22)
+
+[node name="kitchentable_A5" parent="CollisionShape3D" instance=ExtResource("12_f8nnx")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.00318672, -0.403517, 0.22)
+
+[node name="kitchentable_A_large_decorated5" parent="CollisionShape3D" instance=ExtResource("13_e1xq3")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.0207595, -0.403517, 0.22)
+
+[node name="kitchentable_sink5" parent="CollisionShape3D" instance=ExtResource("14_f8yui")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.0529999, -0.403517, 0.22)
+
+[node name="kitchentable_sink_large_decorated5" parent="CollisionShape3D" instance=ExtResource("15_svdsb")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.112764, -0.401118, 0.22)
+
+[node name="lid_large5" parent="CollisionShape3D" instance=ExtResource("16_vsc6e")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.0776487, -0.244624, 0.22)
+
+[node name="menu5" parent="CollisionShape3D" instance=ExtResource("17_1mped")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.0693375, -0.235727, 0.22)
+
+[node name="lid_A8" parent="CollisionShape3D" instance=ExtResource("18_fssf6")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.00492997, -0.237328, 0.22)
+
+[node name="mustard9" parent="CollisionShape3D" instance=ExtResource("11_1x7l4")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.000476383, -0.234657, 0.22)
+
+[node name="lid_A9" parent="CollisionShape3D" instance=ExtResource("18_fssf6")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.0282555, -0.243776, 0.22)
+
+[node name="oven5" parent="CollisionShape3D" instance=ExtResource("19_hwmuk")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.129958, -0.422452, 0.22)
+
+[node name="kitchencabinet_half21" parent="CollisionShape3D" instance=ExtResource("4_1d6qk")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.144373, -0.541877, 0.22)
+
+[node name="kitchencounter_innercorner20" parent="CollisionShape3D" instance=ExtResource("5_a1bk8")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.143765, -0.403517, 0.22)
+
+[node name="kitchencounter_innercorner21" parent="CollisionShape3D" instance=ExtResource("5_a1bk8")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.158208, -0.403517, 0.22)
+
+[node name="pan_0065" parent="CollisionShape3D" instance=ExtResource("20_c6in1")]
+transform = Transform3D(-0.00527582, 0, -0.00429963, 0, 0.170648, 0, 0.0362239, 0, -0.0444482, -0.143358, -0.23797, 0.22)
+
+[node name="pan_A5" parent="CollisionShape3D" instance=ExtResource("21_wl7ic")]
+transform = Transform3D(0.00362033, 0.00390484, -0.00423869, 0.00392721, 0.12379, 0.117395, 0.0485362, -0.0218044, 0.0213686, -0.133974, -0.0415307, 0.22)
+
+[node name="papertowel5" parent="CollisionShape3D" instance=ExtResource("22_5ubd5")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.0368722, 0.0265312, 0.22)
+
+[node name="pillar_A5" parent="CollisionShape3D" instance=ExtResource("23_hcdel")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.0921431, -0.421017, 0.22)
+
+[node name="plate8" parent="CollisionShape3D" instance=ExtResource("24_vkk1f")]
+transform = Transform3D(-0.00400282, 0.00239839, -0.00495442, 0.0877091, 0.146383, 4.47803e-09, 0.0358051, -0.0214535, -0.0393135, 0.0968972, 0.0560883, 0.22)
+
+[node name="plate9" parent="CollisionShape3D" instance=ExtResource("24_vkk1f")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.0368939, -0.231059, 0.22)
+
+[node name="shelf_papertowel5" parent="CollisionShape3D" instance=ExtResource("25_0qgm4")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.112825, 0.17714, 0.22)
+
+[node name="stove_multi5" parent="CollisionShape3D" instance=ExtResource("26_up66c")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.158086, -0.245564, 0.22)
+
+[node name="pot_B_stew5" parent="CollisionShape3D" instance=ExtResource("27_esr7a")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.16188, -0.0498618, 0.22)
+
+[node name="towelrail5" parent="CollisionShape3D" instance=ExtResource("28_ss4ix")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.143732, -0.391264, 0.22)
+
+[node name="wall_orderwindow_decorated17" parent="CollisionShape3D" instance=ExtResource("29_bgpxs")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.0132997, -0.403517, 0.22)
+
+[node name="wall14" parent="CollisionShape3D" instance=ExtResource("30_jpgqt")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.0412816, -0.403517, 0.22)
+
+[node name="wall15" parent="CollisionShape3D" instance=ExtResource("30_jpgqt")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.0140649, -0.403517, 0.22)
+
+[node name="wall16" parent="CollisionShape3D" instance=ExtResource("30_jpgqt")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.123589, -0.403517, 0.22)
+
+[node name="wall17" parent="CollisionShape3D" instance=ExtResource("30_jpgqt")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.0682716, -0.403517, 0.22)
+
+[node name="wall_orderwindow_decorated18" parent="CollisionShape3D" instance=ExtResource("29_bgpxs")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.0956361, -0.403517, 0.22)
+
+[node name="wall_window_open8" parent="CollisionShape3D" instance=ExtResource("31_0nbab")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.123099, -0.403517, 0.22)
+
+[node name="wall_decorated5" parent="CollisionShape3D" instance=ExtResource("32_wnemg")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.150566, -0.417956, 0.279007)
+
+[node name="wall_window_open9" parent="CollisionShape3D" instance=ExtResource("31_0nbab")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.0407622, -0.403517, 0.22)
+
+[node name="wall_orderwindow_decorated19" parent="CollisionShape3D" instance=ExtResource("29_bgpxs")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.0689155, -0.403517, 0.22)
+
+[node name="wall_orderwindow_decorated20" parent="CollisionShape3D" instance=ExtResource("29_bgpxs")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.0964588, -0.403517, 0.22)
+
+[node name="fridge_A_decorated10" parent="CollisionShape3D" instance=ExtResource("1_aa3lv")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.42997, -0.403517, 0.22)
+
+[node name="fridge_A_decorated11" parent="CollisionShape3D" instance=ExtResource("1_aa3lv")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.290183, -0.403517, 0.22)
+
+[node name="kitchencabinet14" parent="CollisionShape3D" instance=ExtResource("2_mdnvx")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.41213, -0.551969, 0.22)
+
+[node name="kitchencabinet15" parent="CollisionShape3D" instance=ExtResource("2_mdnvx")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.368298, -0.493469, 0.22)
+
+[node name="kitchencabinet_corner6" parent="CollisionShape3D" instance=ExtResource("3_tucwl")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.398103, -0.558951, 0.22)
+
+[node name="kitchencabinet_half22" parent="CollisionShape3D" instance=ExtResource("4_1d6qk")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.443593, -0.541877, 0.22)
+
+[node name="kitchencounter_innercorner22" parent="CollisionShape3D" instance=ExtResource("5_a1bk8")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.444201, -0.403517, 0.22)
+
+[node name="kitchencabinet_half23" parent="CollisionShape3D" instance=ExtResource("4_1d6qk")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.35424, -0.521773, 0.22)
+
+[node name="kitchencabinet_half24" parent="CollisionShape3D" instance=ExtResource("4_1d6qk")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.326009, -0.510893, 0.22)
+
+[node name="kitchencabinet16" parent="CollisionShape3D" instance=ExtResource("2_mdnvx")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.261835, -0.405481, 0.22)
+
+[node name="kitchencabinet_half25" parent="CollisionShape3D" instance=ExtResource("4_1d6qk")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.247776, -0.529541, 0.22)
+
+[node name="kitchencounter_innercorner23" parent="CollisionShape3D" instance=ExtResource("5_a1bk8")]
+transform = Transform3D(8.92494e-10, 0, -0.00680596, 0, 0.170648, 0, 0.0573394, 0, 7.51916e-09, 0.261752, -0.411285, 0.22)
+
+[node name="kitchencounter_straight_A10" parent="CollisionShape3D" instance=ExtResource("6_jt37n")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.247715, -0.411285, 0.22)
+
+[node name="kitchencounter_straight_decorated10" parent="CollisionShape3D" instance=ExtResource("7_eirw2")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.233676, -0.411285, 0.22)
+
+[node name="kitchencounter_outercorner6" parent="CollisionShape3D" instance=ExtResource("8_5sam7")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.396826, -0.403517, 0.22)
+
+[node name="kitchencounter_innercorner24" parent="CollisionShape3D" instance=ExtResource("5_a1bk8")]
+transform = Transform3D(8.92494e-10, 0, -0.00680596, 0, 0.170648, 0, 0.0573394, 0, 7.51916e-09, 0.368215, -0.403517, 0.22)
+
+[node name="kitchencounter_sink6" parent="CollisionShape3D" instance=ExtResource("9_8i6o8")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.382272, -0.403517, 0.22)
+
+[node name="kitchencounter_straight_A11" parent="CollisionShape3D" instance=ExtResource("6_jt37n")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.354179, -0.403517, 0.22)
+
+[node name="kitchencounter_straight_A_decorated6" parent="CollisionShape3D" instance=ExtResource("10_fyxfv")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.458431, -0.403517, 0.22)
+
+[node name="mustard10" parent="CollisionShape3D" instance=ExtResource("11_1x7l4")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.371541, -0.235706, 0.22)
+
+[node name="kitchencounter_straight_decorated11" parent="CollisionShape3D" instance=ExtResource("7_eirw2")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.34014, -0.403517, 0.22)
+
+[node name="kitchentable_A6" parent="CollisionShape3D" instance=ExtResource("12_f8nnx")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.325711, -0.403517, 0.22)
+
+[node name="kitchentable_A_large_decorated6" parent="CollisionShape3D" instance=ExtResource("13_e1xq3")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.308138, -0.403517, 0.22)
+
+[node name="kitchentable_sink6" parent="CollisionShape3D" instance=ExtResource("14_f8yui")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.275898, -0.403517, 0.22)
+
+[node name="kitchentable_sink_large_decorated6" parent="CollisionShape3D" instance=ExtResource("15_svdsb")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.216134, -0.401118, 0.22)
+
+[node name="lid_large6" parent="CollisionShape3D" instance=ExtResource("16_vsc6e")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.251249, -0.244624, 0.22)
+
+[node name="menu6" parent="CollisionShape3D" instance=ExtResource("17_1mped")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.25956, -0.235727, 0.22)
+
+[node name="lid_A10" parent="CollisionShape3D" instance=ExtResource("18_fssf6")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.323968, -0.237328, 0.22)
+
+[node name="mustard11" parent="CollisionShape3D" instance=ExtResource("11_1x7l4")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.328422, -0.234657, 0.22)
+
+[node name="lid_A11" parent="CollisionShape3D" instance=ExtResource("18_fssf6")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.357153, -0.243776, 0.22)
+
+[node name="oven6" parent="CollisionShape3D" instance=ExtResource("19_hwmuk")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.19894, -0.422452, 0.22)
+
+[node name="kitchencabinet_half26" parent="CollisionShape3D" instance=ExtResource("4_1d6qk")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.184525, -0.541877, 0.22)
+
+[node name="kitchencounter_innercorner25" parent="CollisionShape3D" instance=ExtResource("5_a1bk8")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.185133, -0.403517, 0.22)
+
+[node name="kitchencounter_innercorner26" parent="CollisionShape3D" instance=ExtResource("5_a1bk8")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.17069, -0.403517, 0.22)
+
+[node name="pan_0066" parent="CollisionShape3D" instance=ExtResource("20_c6in1")]
+transform = Transform3D(-0.00527582, 0, -0.00429963, 0, 0.170648, 0, 0.0362239, 0, -0.0444482, 0.185539, -0.23797, 0.22)
+
+[node name="pan_A6" parent="CollisionShape3D" instance=ExtResource("21_wl7ic")]
+transform = Transform3D(0.00362033, 0.00390484, -0.00423869, 0.00392721, 0.12379, 0.117395, 0.0485362, -0.0218044, 0.0213686, 0.194924, -0.0415307, 0.22)
+
+[node name="papertowel6" parent="CollisionShape3D" instance=ExtResource("22_5ubd5")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.292026, 0.0265312, 0.22)
+
+[node name="pillar_A6" parent="CollisionShape3D" instance=ExtResource("23_hcdel")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.421041, -0.421017, 0.22)
+
+[node name="plate10" parent="CollisionShape3D" instance=ExtResource("24_vkk1f")]
+transform = Transform3D(-0.00400282, 0.00239839, -0.00495442, 0.0877091, 0.146383, 4.47803e-09, 0.0358051, -0.0214535, -0.0393135, 0.425795, 0.0560883, 0.22)
+
+[node name="plate11" parent="CollisionShape3D" instance=ExtResource("24_vkk1f")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.365792, -0.231059, 0.22)
+
+[node name="shelf_papertowel6" parent="CollisionShape3D" instance=ExtResource("25_0qgm4")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.216073, 0.17714, 0.22)
+
+[node name="stove_multi6" parent="CollisionShape3D" instance=ExtResource("26_up66c")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.170812, -0.245564, 0.22)
+
+[node name="pot_B_stew6" parent="CollisionShape3D" instance=ExtResource("27_esr7a")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.167018, -0.0498618, 0.22)
+
+[node name="towelrail6" parent="CollisionShape3D" instance=ExtResource("28_ss4ix")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.185166, -0.391264, 0.22)
+
+[node name="wall_orderwindow_decorated21" parent="CollisionShape3D" instance=ExtResource("29_bgpxs")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.342198, -0.403517, 0.22)
+
+[node name="wall18" parent="CollisionShape3D" instance=ExtResource("30_jpgqt")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.287616, -0.403517, 0.22)
+
+[node name="wall19" parent="CollisionShape3D" instance=ExtResource("30_jpgqt")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.314833, -0.403517, 0.22)
+
+[node name="wall20" parent="CollisionShape3D" instance=ExtResource("30_jpgqt")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.205309, -0.403517, 0.22)
+
+[node name="wall21" parent="CollisionShape3D" instance=ExtResource("30_jpgqt")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.39717, -0.403517, 0.22)
+
+[node name="wall_orderwindow_decorated22" parent="CollisionShape3D" instance=ExtResource("29_bgpxs")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.424534, -0.403517, 0.22)
+
+[node name="wall_window_open10" parent="CollisionShape3D" instance=ExtResource("31_0nbab")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.451997, -0.403517, 0.22)
+
+[node name="wall_decorated6" parent="CollisionShape3D" instance=ExtResource("32_wnemg")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.479464, -0.417956, 0.261066)
+
+[node name="wall_window_open11" parent="CollisionShape3D" instance=ExtResource("31_0nbab")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.36966, -0.403517, 0.22)
+
+[node name="wall_orderwindow_decorated23" parent="CollisionShape3D" instance=ExtResource("29_bgpxs")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.259982, -0.403517, 0.22)
+
+[node name="wall_orderwindow_decorated24" parent="CollisionShape3D" instance=ExtResource("29_bgpxs")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.232439, -0.403517, 0.22)
+
+[node name="fridge_A_decorated12" parent="CollisionShape3D" instance=ExtResource("1_aa3lv")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.228809, -0.403517, 0.22)
+
+[node name="fridge_A_decorated13" parent="CollisionShape3D" instance=ExtResource("1_aa3lv")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.368596, -0.403517, 0.22)
+
+[node name="kitchencabinet17" parent="CollisionShape3D" instance=ExtResource("2_mdnvx")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.246649, -0.551969, 0.22)
+
+[node name="kitchencabinet18" parent="CollisionShape3D" instance=ExtResource("2_mdnvx")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.290481, -0.493469, 0.22)
+
+[node name="kitchencabinet_corner7" parent="CollisionShape3D" instance=ExtResource("3_tucwl")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.260676, -0.558951, 0.22)
+
+[node name="kitchencabinet_half27" parent="CollisionShape3D" instance=ExtResource("4_1d6qk")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.215186, -0.541877, 0.22)
+
+[node name="kitchencounter_innercorner27" parent="CollisionShape3D" instance=ExtResource("5_a1bk8")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.214578, -0.403517, 0.22)
+
+[node name="kitchencabinet_half28" parent="CollisionShape3D" instance=ExtResource("4_1d6qk")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.30454, -0.521773, 0.22)
+
+[node name="kitchencabinet_half29" parent="CollisionShape3D" instance=ExtResource("4_1d6qk")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.332771, -0.510893, 0.22)
+
+[node name="kitchencabinet19" parent="CollisionShape3D" instance=ExtResource("2_mdnvx")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.396944, -0.405481, 0.22)
+
+[node name="kitchencabinet_half30" parent="CollisionShape3D" instance=ExtResource("4_1d6qk")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.411003, -0.529541, 0.22)
+
+[node name="kitchencounter_innercorner28" parent="CollisionShape3D" instance=ExtResource("5_a1bk8")]
+transform = Transform3D(8.92494e-10, 0, -0.00680596, 0, 0.170648, 0, 0.0573394, 0, 7.51916e-09, -0.397027, -0.411285, 0.22)
+
+[node name="kitchencounter_straight_A12" parent="CollisionShape3D" instance=ExtResource("6_jt37n")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.411064, -0.411285, 0.22)
+
+[node name="kitchencounter_straight_decorated12" parent="CollisionShape3D" instance=ExtResource("7_eirw2")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.425103, -0.411285, 0.22)
+
+[node name="kitchencounter_outercorner7" parent="CollisionShape3D" instance=ExtResource("8_5sam7")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.261953, -0.403517, 0.22)
+
+[node name="kitchencounter_innercorner29" parent="CollisionShape3D" instance=ExtResource("5_a1bk8")]
+transform = Transform3D(8.92494e-10, 0, -0.00680596, 0, 0.170648, 0, 0.0573394, 0, 7.51916e-09, -0.290564, -0.403517, 0.22)
+
+[node name="kitchencounter_sink7" parent="CollisionShape3D" instance=ExtResource("9_8i6o8")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.276507, -0.403517, 0.22)
+
+[node name="kitchencounter_straight_A13" parent="CollisionShape3D" instance=ExtResource("6_jt37n")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.304601, -0.403517, 0.22)
+
+[node name="kitchencounter_straight_A_decorated7" parent="CollisionShape3D" instance=ExtResource("10_fyxfv")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.200348, -0.403517, 0.22)
+
+[node name="mustard12" parent="CollisionShape3D" instance=ExtResource("11_1x7l4")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.287238, -0.235706, 0.22)
+
+[node name="kitchencounter_straight_decorated13" parent="CollisionShape3D" instance=ExtResource("7_eirw2")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.318639, -0.403517, 0.22)
+
+[node name="kitchentable_A7" parent="CollisionShape3D" instance=ExtResource("12_f8nnx")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.333068, -0.403517, 0.22)
+
+[node name="kitchentable_A_large_decorated7" parent="CollisionShape3D" instance=ExtResource("13_e1xq3")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.350641, -0.403517, 0.22)
+
+[node name="kitchentable_sink7" parent="CollisionShape3D" instance=ExtResource("14_f8yui")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.382881, -0.403517, 0.22)
+
+[node name="kitchentable_sink_large_decorated7" parent="CollisionShape3D" instance=ExtResource("15_svdsb")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.442645, -0.401118, 0.22)
+
+[node name="lid_large7" parent="CollisionShape3D" instance=ExtResource("16_vsc6e")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.40753, -0.244624, 0.22)
+
+[node name="menu7" parent="CollisionShape3D" instance=ExtResource("17_1mped")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.399219, -0.235727, 0.22)
+
+[node name="lid_A12" parent="CollisionShape3D" instance=ExtResource("18_fssf6")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.334811, -0.237328, 0.22)
+
+[node name="mustard13" parent="CollisionShape3D" instance=ExtResource("11_1x7l4")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.330358, -0.234657, 0.22)
+
+[node name="lid_A13" parent="CollisionShape3D" instance=ExtResource("18_fssf6")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.301626, -0.243776, 0.22)
+
+[node name="oven7" parent="CollisionShape3D" instance=ExtResource("19_hwmuk")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.459839, -0.422452, 0.22)
+
+[node name="kitchencabinet_half31" parent="CollisionShape3D" instance=ExtResource("4_1d6qk")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.474254, -0.541877, 0.22)
+
+[node name="kitchencounter_innercorner30" parent="CollisionShape3D" instance=ExtResource("5_a1bk8")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.473646, -0.403517, 0.22)
+
+[node name="kitchencounter_innercorner31" parent="CollisionShape3D" instance=ExtResource("5_a1bk8")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.48809, -0.403517, 0.22)
+
+[node name="pan_0067" parent="CollisionShape3D" instance=ExtResource("20_c6in1")]
+transform = Transform3D(-0.00527582, 0, -0.00429963, 0, 0.170648, 0, 0.0362239, 0, -0.0444482, -0.47324, -0.23797, 0.22)
+
+[node name="pan_A7" parent="CollisionShape3D" instance=ExtResource("21_wl7ic")]
+transform = Transform3D(0.00362033, 0.00390484, -0.00423869, 0.00392721, 0.12379, 0.117395, 0.0485362, -0.0218044, 0.0213686, -0.463855, -0.0415307, 0.22)
+
+[node name="papertowel7" parent="CollisionShape3D" instance=ExtResource("22_5ubd5")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.366754, 0.0265312, 0.22)
+
+[node name="pillar_A7" parent="CollisionShape3D" instance=ExtResource("23_hcdel")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.237738, -0.421017, 0.22)
+
+[node name="plate12" parent="CollisionShape3D" instance=ExtResource("24_vkk1f")]
+transform = Transform3D(-0.00400282, 0.00239839, -0.00495442, 0.0877091, 0.146383, 4.47803e-09, 0.0358051, -0.0214535, -0.0393135, -0.232984, 0.0560883, 0.22)
+
+[node name="plate13" parent="CollisionShape3D" instance=ExtResource("24_vkk1f")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.292987, -0.231059, 0.22)
+
+[node name="shelf_papertowel7" parent="CollisionShape3D" instance=ExtResource("25_0qgm4")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.442706, 0.17714, 0.22)
+
+[node name="stove_multi7" parent="CollisionShape3D" instance=ExtResource("26_up66c")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.487967, -0.245564, 0.22)
+
+[node name="pot_B_stew7" parent="CollisionShape3D" instance=ExtResource("27_esr7a")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.491761, -0.0498618, 0.22)
+
+[node name="towelrail7" parent="CollisionShape3D" instance=ExtResource("28_ss4ix")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.473613, -0.391264, 0.22)
+
+[node name="wall_orderwindow_decorated25" parent="CollisionShape3D" instance=ExtResource("29_bgpxs")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.316582, -0.403517, 0.22)
+
+[node name="wall22" parent="CollisionShape3D" instance=ExtResource("30_jpgqt")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.371163, -0.403517, 0.22)
+
+[node name="wall23" parent="CollisionShape3D" instance=ExtResource("30_jpgqt")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.343946, -0.403517, 0.22)
+
+[node name="wall24" parent="CollisionShape3D" instance=ExtResource("30_jpgqt")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.45347, -0.403517, 0.22)
+
+[node name="wall25" parent="CollisionShape3D" instance=ExtResource("30_jpgqt")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.26161, -0.403517, 0.22)
+
+[node name="wall_orderwindow_decorated26" parent="CollisionShape3D" instance=ExtResource("29_bgpxs")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.234245, -0.403517, 0.22)
+
+[node name="wall_window_open12" parent="CollisionShape3D" instance=ExtResource("31_0nbab")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.206783, -0.403517, 0.22)
+
+[node name="wall_decorated7" parent="CollisionShape3D" instance=ExtResource("32_wnemg")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.179315, -0.417956, 0.273565)
+
+[node name="wall_window_open13" parent="CollisionShape3D" instance=ExtResource("31_0nbab")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.289119, -0.403517, 0.22)
+
+[node name="wall_orderwindow_decorated27" parent="CollisionShape3D" instance=ExtResource("29_bgpxs")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.398797, -0.403517, 0.22)
+
+[node name="wall_orderwindow_decorated28" parent="CollisionShape3D" instance=ExtResource("29_bgpxs")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.42634, -0.403517, 0.22)
+
+[node name="wall_orderwindow_decorated29" parent="CollisionShape3D" instance=ExtResource("29_bgpxs")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.481012, -0.403517, 0.22)
+
+[node name="wall_orderwindow_decorated30" parent="CollisionShape3D" instance=ExtResource("29_bgpxs")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, 0.177767, -0.403517, 0.22)
+
+[node name="wall_orderwindow_decorated31" parent="CollisionShape3D" instance=ExtResource("29_bgpxs")]
+transform = Transform3D(-0.00680596, 0, -5.94996e-10, 0, 0.170648, 0, 5.01277e-09, 0, -0.0573394, -0.151131, -0.403517, 0.22)
+
+[node name="wall_decorated2" parent="CollisionShape3D" instance=ExtResource("32_wnemg")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.152504, -0.403517, -0.28468)
+
+[node name="wall_window_open2" parent="CollisionShape3D" instance=ExtResource("31_0nbab")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.0426997, -0.389078, -0.22)
+
+[node name="wall_orderwindow_decorated4" parent="CollisionShape3D" instance=ExtResource("29_bgpxs")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.066978, -0.389078, -0.22)
+
+[node name="wall_orderwindow_decorated6" parent="CollisionShape3D" instance=ExtResource("29_bgpxs")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.0945214, -0.389078, -0.22)
+
+[node name="fridge_A_decorated4" parent="CollisionShape3D" instance=ExtResource("1_aa3lv")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.431908, -0.389078, -0.22)
+
+[node name="fridge_A_decorated5" parent="CollisionShape3D" instance=ExtResource("1_aa3lv")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.292121, -0.389078, -0.22)
+
+[node name="kitchencabinet5" parent="CollisionShape3D" instance=ExtResource("2_mdnvx")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.414068, -0.53753, -0.22)
+
+[node name="kitchencabinet6" parent="CollisionShape3D" instance=ExtResource("2_mdnvx")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.370236, -0.47903, -0.22)
+
+[node name="kitchencabinet_corner3" parent="CollisionShape3D" instance=ExtResource("3_tucwl")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.40004, -0.544512, -0.22)
+
+[node name="kitchencabinet_half7" parent="CollisionShape3D" instance=ExtResource("4_1d6qk")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.445531, -0.527438, -0.22)
+
+[node name="kitchencounter_innercorner7" parent="CollisionShape3D" instance=ExtResource("5_a1bk8")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.446139, -0.389078, -0.22)
+
+[node name="kitchencabinet_half8" parent="CollisionShape3D" instance=ExtResource("4_1d6qk")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.356177, -0.507334, -0.22)
+
+[node name="kitchencabinet_half9" parent="CollisionShape3D" instance=ExtResource("4_1d6qk")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.327946, -0.496454, -0.22)
+
+[node name="kitchencabinet7" parent="CollisionShape3D" instance=ExtResource("2_mdnvx")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.263772, -0.391043, -0.22)
+
+[node name="kitchencabinet_half10" parent="CollisionShape3D" instance=ExtResource("4_1d6qk")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.249714, -0.515103, -0.22)
+
+[node name="kitchencounter_innercorner8" parent="CollisionShape3D" instance=ExtResource("5_a1bk8")]
+transform = Transform3D(-2.97498e-10, 0, 0.00680596, 0, 0.170648, 0, -0.0573394, 0, -2.50639e-09, -0.263689, -0.396847, -0.22)
+
+[node name="kitchencounter_straight_A4" parent="CollisionShape3D" instance=ExtResource("6_jt37n")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.249653, -0.396847, -0.22)
+
+[node name="kitchencounter_straight_decorated4" parent="CollisionShape3D" instance=ExtResource("7_eirw2")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.235614, -0.396847, -0.22)
+
+[node name="kitchencounter_outercorner3" parent="CollisionShape3D" instance=ExtResource("8_5sam7")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.398764, -0.389078, -0.22)
+
+[node name="kitchencounter_innercorner9" parent="CollisionShape3D" instance=ExtResource("5_a1bk8")]
+transform = Transform3D(-2.97498e-10, 0, 0.00680596, 0, 0.170648, 0, -0.0573394, 0, -2.50639e-09, -0.370153, -0.389078, -0.22)
+
+[node name="kitchencounter_sink3" parent="CollisionShape3D" instance=ExtResource("9_8i6o8")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.384209, -0.389078, -0.22)
+
+[node name="kitchencounter_straight_A5" parent="CollisionShape3D" instance=ExtResource("6_jt37n")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.356116, -0.389078, -0.22)
+
+[node name="kitchencounter_straight_A_decorated3" parent="CollisionShape3D" instance=ExtResource("10_fyxfv")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.460368, -0.389079, -0.22)
+
+[node name="mustard4" parent="CollisionShape3D" instance=ExtResource("11_1x7l4")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.373479, -0.221267, -0.22)
+
+[node name="kitchencounter_straight_decorated5" parent="CollisionShape3D" instance=ExtResource("7_eirw2")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.342077, -0.389078, -0.22)
+
+[node name="kitchentable_A3" parent="CollisionShape3D" instance=ExtResource("12_f8nnx")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.327649, -0.389078, -0.22)
+
+[node name="kitchentable_A_large_decorated3" parent="CollisionShape3D" instance=ExtResource("13_e1xq3")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.310076, -0.389078, -0.22)
+
+[node name="kitchentable_sink3" parent="CollisionShape3D" instance=ExtResource("14_f8yui")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.277835, -0.389078, -0.22)
+
+[node name="kitchentable_sink_large_decorated3" parent="CollisionShape3D" instance=ExtResource("15_svdsb")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.218072, -0.38668, -0.22)
+
+[node name="lid_large3" parent="CollisionShape3D" instance=ExtResource("16_vsc6e")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.253187, -0.230185, -0.22)
+
+[node name="menu3" parent="CollisionShape3D" instance=ExtResource("17_1mped")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.261498, -0.221289, -0.22)
+
+[node name="lid_A4" parent="CollisionShape3D" instance=ExtResource("18_fssf6")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.325905, -0.222889, -0.22)
+
+[node name="mustard5" parent="CollisionShape3D" instance=ExtResource("11_1x7l4")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.330359, -0.220218, -0.22)
+
+[node name="lid_A5" parent="CollisionShape3D" instance=ExtResource("18_fssf6")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.359091, -0.229338, -0.22)
+
+[node name="oven3" parent="CollisionShape3D" instance=ExtResource("19_hwmuk")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.200878, -0.408014, -0.22)
+
+[node name="kitchencabinet_half11" parent="CollisionShape3D" instance=ExtResource("4_1d6qk")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.186463, -0.527438, -0.22)
+
+[node name="kitchencounter_innercorner10" parent="CollisionShape3D" instance=ExtResource("5_a1bk8")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.187071, -0.389078, -0.22)
+
+[node name="kitchencounter_innercorner11" parent="CollisionShape3D" instance=ExtResource("5_a1bk8")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.172627, -0.389078, -0.22)
+
+[node name="pan_0063" parent="CollisionShape3D" instance=ExtResource("20_c6in1")]
+transform = Transform3D(0.00527582, 0, 0.00429963, 0, 0.170648, 0, -0.0362239, 0, 0.0444482, -0.187477, -0.223532, -0.22)
+
+[node name="pan_A3" parent="CollisionShape3D" instance=ExtResource("21_wl7ic")]
+transform = Transform3D(-0.00362033, -0.00390484, 0.00423869, 0.0039272, 0.12379, 0.117394, -0.0485362, 0.0218044, -0.0213686, -0.196861, -0.0270921, -0.22)
+
+[node name="papertowel3" parent="CollisionShape3D" instance=ExtResource("22_5ubd5")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.293963, 0.0409698, -0.22)
+
+[node name="pillar_A3" parent="CollisionShape3D" instance=ExtResource("23_hcdel")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.422979, -0.406578, -0.22)
+
+[node name="plate4" parent="CollisionShape3D" instance=ExtResource("24_vkk1f")]
+transform = Transform3D(0.00400282, -0.00239839, 0.00495442, 0.0877091, 0.146383, 2.13139e-09, -0.0358051, 0.0214535, 0.0393135, -0.427732, 0.0705268, -0.22)
+
+[node name="plate5" parent="CollisionShape3D" instance=ExtResource("24_vkk1f")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.367729, -0.21662, -0.22)
+
+[node name="shelf_papertowel3" parent="CollisionShape3D" instance=ExtResource("25_0qgm4")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.21801, 0.191579, -0.22)
+
+[node name="stove_multi3" parent="CollisionShape3D" instance=ExtResource("26_up66c")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.17275, -0.231126, -0.22)
+
+[node name="pot_B_stew3" parent="CollisionShape3D" instance=ExtResource("27_esr7a")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.168956, -0.0354232, -0.22)
+
+[node name="towelrail3" parent="CollisionShape3D" instance=ExtResource("28_ss4ix")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.187104, -0.376826, -0.22)
+
+[node name="wall_orderwindow_decorated7" parent="CollisionShape3D" instance=ExtResource("29_bgpxs")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.344135, -0.389078, -0.22)
+
+[node name="wall6" parent="CollisionShape3D" instance=ExtResource("30_jpgqt")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.289554, -0.389078, -0.22)
+
+[node name="wall7" parent="CollisionShape3D" instance=ExtResource("30_jpgqt")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.31677, -0.389078, -0.22)
+
+[node name="wall8" parent="CollisionShape3D" instance=ExtResource("30_jpgqt")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.207246, -0.389078, -0.22)
+
+[node name="wall9" parent="CollisionShape3D" instance=ExtResource("30_jpgqt")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.399107, -0.389078, -0.22)
+
+[node name="wall_orderwindow_decorated8" parent="CollisionShape3D" instance=ExtResource("29_bgpxs")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.426472, -0.389078, -0.22)
+
+[node name="wall_window_open4" parent="CollisionShape3D" instance=ExtResource("31_0nbab")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.453934, -0.389078, -0.22)
+
+[node name="wall_decorated3" parent="CollisionShape3D" instance=ExtResource("32_wnemg")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.481402, -0.403517, -0.277228)
+
+[node name="wall_window_open5" parent="CollisionShape3D" instance=ExtResource("31_0nbab")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.371598, -0.389078, -0.22)
+
+[node name="wall_orderwindow_decorated9" parent="CollisionShape3D" instance=ExtResource("29_bgpxs")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.26192, -0.389078, -0.22)
+
+[node name="wall_orderwindow_decorated10" parent="CollisionShape3D" instance=ExtResource("29_bgpxs")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.234377, -0.389078, -0.22)
+
+[node name="fridge_A_decorated6" parent="CollisionShape3D" instance=ExtResource("1_aa3lv")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.226872, -0.389078, -0.22)
+
+[node name="fridge_A_decorated7" parent="CollisionShape3D" instance=ExtResource("1_aa3lv")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.366659, -0.389078, -0.22)
+
+[node name="kitchencabinet8" parent="CollisionShape3D" instance=ExtResource("2_mdnvx")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.244711, -0.53753, -0.22)
+
+[node name="kitchencabinet9" parent="CollisionShape3D" instance=ExtResource("2_mdnvx")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.288543, -0.47903, -0.22)
+
+[node name="kitchencabinet_corner4" parent="CollisionShape3D" instance=ExtResource("3_tucwl")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.258739, -0.487367, -0.22)
+
+[node name="kitchencabinet_half12" parent="CollisionShape3D" instance=ExtResource("4_1d6qk")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.213249, -0.527438, -0.22)
+
+[node name="kitchencounter_innercorner12" parent="CollisionShape3D" instance=ExtResource("5_a1bk8")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.21264, -0.389078, -0.22)
+
+[node name="kitchencabinet_half13" parent="CollisionShape3D" instance=ExtResource("4_1d6qk")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.302602, -0.507334, -0.22)
+
+[node name="kitchencabinet_half14" parent="CollisionShape3D" instance=ExtResource("4_1d6qk")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.330833, -0.496454, -0.22)
+
+[node name="kitchencabinet10" parent="CollisionShape3D" instance=ExtResource("2_mdnvx")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.380843, -0.391043, -0.22)
+
+[node name="kitchencabinet_half15" parent="CollisionShape3D" instance=ExtResource("4_1d6qk")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.409066, -0.515103, -0.22)
+
+[node name="kitchencounter_innercorner13" parent="CollisionShape3D" instance=ExtResource("5_a1bk8")]
+transform = Transform3D(-2.97498e-10, 0, 0.00680596, 0, 0.170648, 0, -0.0573394, 0, -2.50639e-09, 0.39509, -0.396847, -0.22)
+
+[node name="kitchencounter_straight_A6" parent="CollisionShape3D" instance=ExtResource("6_jt37n")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.409127, -0.396847, -0.22)
+
+[node name="kitchencounter_straight_decorated6" parent="CollisionShape3D" instance=ExtResource("7_eirw2")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.423165, -0.396847, -0.22)
+
+[node name="kitchencounter_outercorner4" parent="CollisionShape3D" instance=ExtResource("8_5sam7")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.260016, -0.389078, -0.22)
+
+[node name="kitchencounter_innercorner14" parent="CollisionShape3D" instance=ExtResource("5_a1bk8")]
+transform = Transform3D(-2.97498e-10, 0, 0.00680596, 0, 0.170648, 0, -0.0573394, 0, -2.50639e-09, 0.288626, -0.389078, -0.22)
+
+[node name="kitchencounter_sink4" parent="CollisionShape3D" instance=ExtResource("9_8i6o8")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.27457, -0.389078, -0.22)
+
+[node name="kitchencounter_straight_A7" parent="CollisionShape3D" instance=ExtResource("6_jt37n")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.302663, -0.389078, -0.22)
+
+[node name="kitchencounter_straight_A_decorated4" parent="CollisionShape3D" instance=ExtResource("10_fyxfv")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.198411, -0.389079, -0.22)
+
+[node name="mustard6" parent="CollisionShape3D" instance=ExtResource("11_1x7l4")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.285301, -0.221267, -0.22)
+
+[node name="kitchencounter_straight_decorated7" parent="CollisionShape3D" instance=ExtResource("7_eirw2")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.316702, -0.389078, -0.22)
+
+[node name="kitchentable_A4" parent="CollisionShape3D" instance=ExtResource("12_f8nnx")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.331131, -0.389078, -0.22)
+
+[node name="kitchentable_A_large_decorated4" parent="CollisionShape3D" instance=ExtResource("13_e1xq3")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.348703, -0.389078, -0.22)
+
+[node name="kitchentable_sink4" parent="CollisionShape3D" instance=ExtResource("14_f8yui")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.380944, -0.389078, -0.22)
+
+[node name="kitchentable_sink_large_decorated4" parent="CollisionShape3D" instance=ExtResource("15_svdsb")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.440707, -0.38668, -0.22)
+
+[node name="lid_large4" parent="CollisionShape3D" instance=ExtResource("16_vsc6e")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.405593, -0.230185, -0.22)
+
+[node name="menu4" parent="CollisionShape3D" instance=ExtResource("17_1mped")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.397281, -0.221289, -0.22)
+
+[node name="lid_A6" parent="CollisionShape3D" instance=ExtResource("18_fssf6")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.332874, -0.222889, -0.22)
+
+[node name="mustard7" parent="CollisionShape3D" instance=ExtResource("11_1x7l4")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.32842, -0.220218, -0.22)
+
+[node name="lid_A7" parent="CollisionShape3D" instance=ExtResource("18_fssf6")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.273284, -0.229338, -0.22)
+
+[node name="oven4" parent="CollisionShape3D" instance=ExtResource("19_hwmuk")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.457901, -0.408014, -0.22)
+
+[node name="kitchencabinet_half16" parent="CollisionShape3D" instance=ExtResource("4_1d6qk")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.453807, -0.445785, -0.22)
+
+[node name="kitchencounter_innercorner15" parent="CollisionShape3D" instance=ExtResource("5_a1bk8")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.471708, -0.389078, -0.22)
+
+[node name="kitchencounter_innercorner16" parent="CollisionShape3D" instance=ExtResource("5_a1bk8")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.486152, -0.389078, -0.22)
+
+[node name="pan_0064" parent="CollisionShape3D" instance=ExtResource("20_c6in1")]
+transform = Transform3D(0.00527582, 0, 0.00429963, 0, 0.170648, 0, -0.0362239, 0, 0.0444482, 0.475164, -0.191488, -0.22)
+
+[node name="pan_A4" parent="CollisionShape3D" instance=ExtResource("21_wl7ic")]
+transform = Transform3D(-0.005, 0, 0, 0, 0.075, 0, 0, 0, 0.045, 0.406247, 0.168787, -0.22)
+
+[node name="papertowel4" parent="CollisionShape3D" instance=ExtResource("22_5ubd5")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.364816, 0.0409698, -0.22)
+
+[node name="pillar_A4" parent="CollisionShape3D" instance=ExtResource("23_hcdel")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.235801, -0.406578, -0.22)
+
+[node name="plate6" parent="CollisionShape3D" instance=ExtResource("24_vkk1f")]
+transform = Transform3D(0.00400282, -0.00239839, 0.00495442, 0.0877091, 0.146383, 2.13139e-09, -0.0358051, 0.0214535, 0.0393135, 0.231047, 0.0705268, -0.22)
+
+[node name="plate7" parent="CollisionShape3D" instance=ExtResource("24_vkk1f")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.29105, -0.21662, -0.22)
+
+[node name="shelf_papertowel4" parent="CollisionShape3D" instance=ExtResource("25_0qgm4")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.440769, 0.191579, -0.22)
+
+[node name="stove_multi4" parent="CollisionShape3D" instance=ExtResource("26_up66c")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.486029, -0.231126, -0.22)
+
+[node name="pot_B_stew4" parent="CollisionShape3D" instance=ExtResource("27_esr7a")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.483348, -0.0354232, -0.22)
+
+[node name="towelrail4" parent="CollisionShape3D" instance=ExtResource("28_ss4ix")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.471676, -0.376826, -0.22)
+
+[node name="wall_orderwindow_decorated12" parent="CollisionShape3D" instance=ExtResource("29_bgpxs")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.314644, -0.389078, -0.22)
+
+[node name="wall10" parent="CollisionShape3D" instance=ExtResource("30_jpgqt")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.369225, -0.389078, -0.22)
+
+[node name="wall11" parent="CollisionShape3D" instance=ExtResource("30_jpgqt")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.342009, -0.389078, -0.22)
+
+[node name="wall12" parent="CollisionShape3D" instance=ExtResource("30_jpgqt")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.451533, -0.389078, -0.22)
+
+[node name="wall13" parent="CollisionShape3D" instance=ExtResource("30_jpgqt")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.259672, -0.389078, -0.22)
+
+[node name="wall_orderwindow_decorated13" parent="CollisionShape3D" instance=ExtResource("29_bgpxs")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.232308, -0.389078, -0.22)
+
+[node name="wall_window_open6" parent="CollisionShape3D" instance=ExtResource("31_0nbab")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.204845, -0.389078, -0.22)
+
+[node name="wall_decorated4" parent="CollisionShape3D" instance=ExtResource("32_wnemg")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.177378, -0.403517, -0.297446)
+
+[node name="wall_window_open7" parent="CollisionShape3D" instance=ExtResource("31_0nbab")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.287182, -0.389078, -0.22)
+
+[node name="wall_orderwindow_decorated14" parent="CollisionShape3D" instance=ExtResource("29_bgpxs")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.396859, -0.389078, -0.22)
+
+[node name="wall_orderwindow_decorated15" parent="CollisionShape3D" instance=ExtResource("29_bgpxs")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.424403, -0.389078, -0.22)
+
+[node name="wall_orderwindow_decorated16" parent="CollisionShape3D" instance=ExtResource("29_bgpxs")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.479074, -0.389078, -0.22)
+
+[node name="wall_orderwindow_decorated11" parent="CollisionShape3D" instance=ExtResource("29_bgpxs")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, -0.179705, -0.389078, -0.22)
+
+[node name="wall_orderwindow_decorated5" parent="CollisionShape3D" instance=ExtResource("29_bgpxs")]
+transform = Transform3D(0.00680596, 0, 0, 0, 0.170648, 0, 0, 0, 0.0573394, 0.149193, -0.389078, -0.22)

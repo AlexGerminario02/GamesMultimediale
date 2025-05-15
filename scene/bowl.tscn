@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://ckoiy3co3q3bk"]
+
+[ext_resource type="Script" uid="uid://deenyb6mr4het" path="res://script/obstacles.gd" id="1_0q6hc"]
+[ext_resource type="PackedScene" uid="uid://dhbloqtdpoxf5" path="res://kitchen gltf items/bowl.gltf" id="1_lyx2j"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_0q6hc"]
+
+[node name="bowl" type="StaticBody3D"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 0, 0, 0)
+collision_layer = 2
+script = ExtResource("1_0q6hc")
+
+[node name="bowl2" parent="." instance=ExtResource("1_lyx2j")]
+transform = Transform3D(1, 0, 0, 0, 1.2, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.185, 0, 0, 0, 1, 0, 0.172, 0)
+shape = SubResource("CylinderShape3D_0q6hc")
+
+[node name="Area3D" type="Area3D" parent="."]
+transform = Transform3D(1.02, 0, 0, 0, 1.02, 0, 0, 0, 1.02, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 0.21, 0, 0, 0, 1, 0, 0.177, 0)
+shape = SubResource("CylinderShape3D_0q6hc")
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]

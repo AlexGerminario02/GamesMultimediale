@@ -1,0 +1,41 @@
+[gd_scene load_steps=3 format=3 uid="uid://b47qoraik3fox"]
+
+[ext_resource type="FontFile" uid="uid://bjmfgovkx7cju" path="res://materials/SuperLobster.ttf" id="1_hhcn7"]
+[ext_resource type="Script" uid="uid://wt2b2y4af7da" path="res://script/subtitles_toggle_button.gd" id="1_v7hrt"]
+
+[node name="Subtitles_Toggle_Button" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_v7hrt")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Name_Label" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_hhcn7")
+theme_override_font_sizes/font_size = 32
+text = "Subtitles"
+
+[node name="VSeparator" type="VSeparator" parent="HBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 160
+
+[node name="CheckButton" type="CheckButton" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="VSeparator2" type="VSeparator" parent="HBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 160
+
+[node name="State_Label" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_hhcn7")
+theme_override_font_sizes/font_size = 32
+text = "Off"

@@ -1,0 +1,38 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://cuhr1218risi7"
+path.s3tc="res://.godot/imported/ustensils3_ustensils3_normal.png-54644a8b91fd690850abf1225cde415c.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+generator_parameters={
+"md5": "48b627e56502272b787a1d7e3f74847a"
+}
+
+[deps]
+
+source_file="res://kitchen food gltf/ustensils3_ustensils3_normal.png"
+dest_files=["res://.godot/imported/ustensils3_ustensils3_normal.png-54644a8b91fd690850abf1225cde415c.s3tc.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=1
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=1
+roughness/src_normal="res://kitchen food gltf/ustensils3_ustensils3_normal.png"
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0

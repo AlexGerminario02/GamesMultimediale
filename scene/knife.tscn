@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://bvg61fodrm4f4"]
+
+[ext_resource type="Script" uid="uid://deenyb6mr4het" path="res://script/obstacles.gd" id="1_p3heq"]
+[ext_resource type="PackedScene" uid="uid://7x8dy557b371" path="res://kitchen gltf items/knife.gltf" id="2_p3heq"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_g8rq1"]
+size = Vector3(0.285, 6.31, 0.135)
+
+[node name="knife" type="StaticBody3D"]
+transform = Transform3D(0.207055, -0.772741, -1.04908e-07, 0.772741, 0.207055, -1.80744e-14, 2.71521e-08, -1.01333e-07, 0.8, 0, 0.0951297, 0)
+collision_layer = 2
+script = ExtResource("1_p3heq")
+
+[node name="knife2" parent="." instance=ExtResource("2_p3heq")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 1.04308e-07, 0, 0.185, 2.98023e-08, 0, 2.98023e-08, 1, -0.0654993, 0.367637, -0.00416277)
+shape = SubResource("BoxShape3D_g8rq1")
+
+[node name="Area3D" type="Area3D" parent="."]
+transform = Transform3D(1.025, 0, 0, 0, 1.025, 0, 0, 0, 1.025, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 1.04308e-07, 0, 0.185, 2.98023e-08, 0, 2.98023e-08, 1, -0.0654993, 0.367637, -0.00416277)
+shape = SubResource("BoxShape3D_g8rq1")
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]

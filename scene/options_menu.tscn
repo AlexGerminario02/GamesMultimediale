@@ -1,0 +1,63 @@
+[gd_scene load_steps=7 format=3 uid="uid://cgor1opkcsnqw"]
+
+[ext_resource type="Script" uid="uid://dwkq2mdkjo0mc" path="res://script/options_menu.gd" id="1_6xhnm"]
+[ext_resource type="FontFile" uid="uid://bjmfgovkx7cju" path="res://materials/SuperLobster.ttf" id="1_23fbr"]
+[ext_resource type="PackedScene" uid="uid://6rmpn8ednpe2" path="res://scene/setting_tab_control.tscn" id="3_ur0f7"]
+[ext_resource type="Texture2D" uid="uid://bqdi4r03efm15" path="res://materials/40e4425fc69645b70fbe78a1d814ee93-removebg-preview.png" id="4_636ym"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dbuiw"]
+texture = ExtResource("4_636ym")
+region_rect = Rect2(295, 150, 253, 79)
+modulate_color = Color(0.619608, 0.619608, 0.619608, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_52ewv"]
+texture = ExtResource("4_636ym")
+region_rect = Rect2(295, 150, 253, 79)
+
+[node name="Options_Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6xhnm")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = -48
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("1_23fbr")
+theme_override_font_sizes/font_size = 90
+text = "Options"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Setting_tab_control" parent="MarginContainer/VBoxContainer" instance=ExtResource("3_ur0f7")]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Exit_Button" type="Button" parent="MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(150, 32)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_override_styles/hover = SubResource("StyleBoxTexture_dbuiw")
+theme_override_styles/normal = SubResource("StyleBoxTexture_52ewv")
+toggle_mode = true
+text = "Exit"

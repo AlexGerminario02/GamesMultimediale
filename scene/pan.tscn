@@ -1,0 +1,47 @@
+[gd_scene load_steps=8 format=3 uid="uid://daioscxfiuc24"]
+
+[ext_resource type="Script" uid="uid://deenyb6mr4het" path="res://script/obstacles.gd" id="1_575te"]
+[ext_resource type="PackedScene" uid="uid://ei4d5c2vsfpr" path="res://kitchen gltf items/pan_A.gltf" id="2_575te"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pln7t"]
+size = Vector3(1.07, 1.605, 1.565)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_575te"]
+albedo_color = Color(0.226563, 0.156571, 0.0575256, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_pln7t"]
+material = SubResource("StandardMaterial3D_575te")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ck3bu"]
+albedo_color = Color(0.226563, 0.156571, 0.0575256, 1)
+
+[sub_resource type="SphereMesh" id="SphereMesh_mdqcr"]
+material = SubResource("StandardMaterial3D_ck3bu")
+
+[node name="pan" type="StaticBody3D"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 0, 0, 0)
+collision_layer = 2
+script = ExtResource("1_575te")
+
+[node name="pan_A2" parent="." instance=ExtResource("2_575te")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.185, 0, 0, 0, 1.025, 0, 0.117, 0.27)
+shape = SubResource("BoxShape3D_pln7t")
+
+[node name="Area3D" type="Area3D" parent="."]
+transform = Transform3D(1.035, 0, 0, 0, 1.035, 0, 0, 0, 1.035, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 0.185, 0, 0, 0, 1.025, 0, 0.117, 0.27)
+shape = SubResource("BoxShape3D_pln7t")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.22, -2.14186e-08, 5.54099e-16, 0, 1.07093e-08, 0.145, 1.9233e-08, 0.245, -6.33815e-09, 0, 0.177, 0.7)
+mesh = SubResource("CylinderMesh_pln7t")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.22, -3.5484e-08, 9.90036e-16, 0, 1.02722e-08, 0.15, 3.32191e-08, 0.235, -6.55671e-09, 0, 0.177, 0.945)
+mesh = SubResource("SphereMesh_mdqcr")
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]

@@ -1,0 +1,63 @@
+[gd_scene load_steps=10 format=3 uid="uid://c7vn4sow2lucb"]
+
+[ext_resource type="Script" uid="uid://3wd4meitx6jf" path="res://script/obst_salita.gd" id="1_bmuvn"]
+[ext_resource type="PackedScene" uid="uid://db6gq5thrnfcn" path="res://kitchen food gltf/fork.glb" id="2_bmuvn"]
+[ext_resource type="PackedScene" uid="uid://tjebjn33h2xf" path="res://kitchen food gltf/eggpackage.glb" id="3_cqsr7"]
+[ext_resource type="PackedScene" uid="uid://c4uv16xs552iw" path="res://kitchen food gltf/milk.glb" id="4_c1drw"]
+[ext_resource type="PackedScene" uid="uid://capu4sp0ymgbh" path="res://kitchen food gltf/mugred.glb" id="5_mc4jh"]
+[ext_resource type="PackedScene" uid="uid://dgkxxqmchmgnr" path="res://kitchen food gltf/spoonlong.glb" id="6_c1drw"]
+[ext_resource type="PackedScene" uid="uid://bu3etjx1rox5t" path="res://kitchen food gltf/sodablue.glb" id="7_mc4jh"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3kdmc"]
+size = Vector3(0.565, 1.47026, 0.152065)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_bmuvn"]
+points = PackedVector3Array(-1.105, 0.1, 0, 3.16, 0.105, 0, 0.535, 1.2, 0, 0.535, 1.2, -0.13, -1.105, 0.1, -0.13, 3.155, 0.105, -0.13, 2.8, 0.745, 0, 2.8, 0.745, -0.13)
+
+[node name="obst_salita" type="StaticBody3D"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 0, 0, 0)
+collision_layer = 4
+script = ExtResource("1_bmuvn")
+
+[node name="fork2" parent="." instance=ExtResource("2_bmuvn")]
+transform = Transform3D(9.12, 0, 0, 0, 4.73502, -7.79449, 0, 7.79449, 4.73502, 0, 0.533779, 0.0892987)
+
+[node name="eggpackage2" parent="." instance=ExtResource("3_cqsr7")]
+transform = Transform3D(1.875, 0, 0, 0, 1.875, 0, 0, 0, 1.875, -0.00579268, 0.0797551, 0.74582)
+
+[node name="eggpackage3" parent="." instance=ExtResource("3_cqsr7")]
+transform = Transform3D(1.875, 0, 0, 0, 1.83148, 0.401638, 0, -0.401638, 1.83148, -0.00579268, 0.383076, 0.58065)
+
+[node name="milk2" parent="." instance=ExtResource("4_c1drw")]
+transform = Transform3D(1.97, 0, 0, 0, 0.985, 1.70607, 0, -1.70607, 0.985, -0.00883739, 0.392763, 1.25498)
+
+[node name="mugred2" parent="." instance=ExtResource("5_mc4jh")]
+transform = Transform3D(-6.79712e-08, 1.555, -3.45279e-15, -0.473676, -2.0705e-08, -1.4811, -1.4811, -6.47409e-08, 0.473676, -0.0112178, 0.748972, 0.753529)
+
+[node name="spoonlong2" parent="." instance=ExtResource("6_c1drw")]
+transform = Transform3D(11.145, 0, 0, 0, -0.729795, -6.89147, 0, 6.89147, -0.729795, -0.0477743, 0.686417, 1.6634)
+
+[node name="sodablue2" parent="." instance=ExtResource("7_mc4jh")]
+transform = Transform3D(-0.181305, -1.26707, -0.00824281, -5.46187e-17, 0.00832676, -1.27997, 1.2671, -0.181301, -0.00117944, -0.0194168, 0.0901671, 2.67324)
+
+[node name="sodablue3" parent="." instance=ExtResource("7_mc4jh")]
+transform = Transform3D(-0.080149, -1.27746, -0.00831042, -5.47284e-17, 0.00832676, -1.27997, 1.27749, -0.0801473, -0.000521392, -0.00806855, 0.0901671, 2.96474)
+
+[node name="sodablue4" parent="." instance=ExtResource("7_mc4jh")]
+transform = Transform3D(-5.59506e-08, -1.27997, -0.00832676, 0, 0.00832676, -1.27997, 1.28, -5.59494e-08, -3.63974e-10, -0.0643506, 0.322187, 2.82144)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1.485, 0, 0, 0, 0.664626, -0.865331, 0, 1.04684, 0.549389, 0, 0.461944, -0.0235242)
+shape = SubResource("BoxShape3D_3kdmc")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="."]
+transform = Transform3D(1.405, 0, 0, 0, -0.255564, -1.01209, 0, 1.59465, -0.1622, 0, 0.682, 1.828)
+shape = SubResource("BoxShape3D_3kdmc")
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="."]
+transform = Transform3D(-0.000278023, -0.000991447, -0.999999, -0.00218199, 0.999998, -0.000990837, 0.999998, 0.00218171, -0.000280185, 0.374924, -0.13404, 0.122379)
+shape = SubResource("ConvexPolygonShape3D_bmuvn")
+
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="."]
+transform = Transform3D(-0.000278005, -0.000991447, -1, -0.00218199, 0.999998, -0.000990999, 0.999998, 0.00218177, -0.000280169, -0.494719, -0.13404, 0.122379)
+shape = SubResource("ConvexPolygonShape3D_bmuvn")

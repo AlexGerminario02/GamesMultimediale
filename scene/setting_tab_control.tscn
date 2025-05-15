@@ -1,0 +1,218 @@
+[gd_scene load_steps=12 format=3 uid="uid://6rmpn8ednpe2"]
+
+[ext_resource type="PackedScene" uid="uid://elltdxlsygdm" path="res://scene/hot_key_rebind.tscn" id="1_klkic"]
+[ext_resource type="PackedScene" uid="uid://bah6kk2j1rhkt" path="res://scene/window_mode_button.tscn" id="1_mf2f7"]
+[ext_resource type="Script" uid="uid://cushdesckswxl" path="res://script/setting_tab_control.gd" id="1_ysj50"]
+[ext_resource type="PackedScene" uid="uid://en6lhp7gmoyb" path="res://scene/resolution_mode_button.tscn" id="2_3mr1k"]
+[ext_resource type="Texture2D" uid="uid://58xpn038avs3" path="res://materials/2303.w032.n002.902A.p30.902.png" id="2_tnki0"]
+[ext_resource type="PackedScene" uid="uid://bdesvrd7fso0s" path="res://scene/audio_slider_settings.tscn" id="4_31l8l"]
+[ext_resource type="Script" uid="uid://bxg5y00m85xc8" path="res://script/v_box_container.gd" id="5_0jqd4"]
+[ext_resource type="PackedScene" uid="uid://b47qoraik3fox" path="res://scene/subtitles_toggle_button.tscn" id="5_j7qw4"]
+[ext_resource type="FontFile" uid="uid://dbov3l412oum1" path="res://materials/Super Lobster.ttf" id="7_p1w5t"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_53vyp"]
+texture = ExtResource("2_tnki0")
+region_rect = Rect2(543, 789, 2417, 1140)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nxhgt"]
+
+[node name="Setting_tab_control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ysj50")
+
+[node name="TabContainer" type="TabContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 262.0
+offset_bottom = -372.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_53vyp")
+tab_alignment = 1
+current_tab = 1
+
+[node name="Graphics" type="TabBar" parent="TabContainer"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="TabContainer/Graphics"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 24
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Graphics/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 35
+alignment = 1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="TabContainer/Graphics/MarginContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Graphics/MarginContainer/ScrollContainer"]
+layout_mode = 2
+theme_override_constants/separation = 128
+
+[node name="Window_Mode_Button" parent="TabContainer/Graphics/MarginContainer/ScrollContainer/VBoxContainer" instance=ExtResource("1_mf2f7")]
+layout_mode = 2
+
+[node name="Resolution_Mode_Button" parent="TabContainer/Graphics/MarginContainer/ScrollContainer/VBoxContainer" instance=ExtResource("2_3mr1k")]
+layout_mode = 2
+
+[node name="Controls" type="TabBar" parent="TabContainer"]
+layout_mode = 2
+metadata/_tab_index = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="TabContainer/Controls"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 41.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = -10
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 24
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Controls/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 90
+script = ExtResource("5_0jqd4")
+
+[node name="HSeparator" type="HSeparator" parent="TabContainer/Controls/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 0
+theme_override_styles/separator = SubResource("StyleBoxEmpty_nxhgt")
+
+[node name="HotKey_Rebind" parent="TabContainer/Controls/MarginContainer/VBoxContainer" instance=ExtResource("1_klkic")]
+layout_mode = 2
+
+[node name="HotKey_Rebind2" parent="TabContainer/Controls/MarginContainer/VBoxContainer" instance=ExtResource("1_klkic")]
+layout_mode = 2
+action_name = "move_right"
+
+[node name="HotKey_Rebind3" parent="TabContainer/Controls/MarginContainer/VBoxContainer" instance=ExtResource("1_klkic")]
+layout_mode = 2
+action_name = "jump"
+
+[node name="HotKey_Rebind4" parent="TabContainer/Controls/MarginContainer/VBoxContainer" instance=ExtResource("1_klkic")]
+layout_mode = 2
+action_name = "down"
+
+[node name="Control" type="Control" parent="TabContainer/Controls/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TabContainer/Controls/MarginContainer/VBoxContainer/Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -20.0
+offset_right = 605.0
+offset_bottom = 20.0
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="TabContainer/Controls/MarginContainer/VBoxContainer/Control/HBoxContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(400, 30)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("7_p1w5t")
+theme_override_font_sizes/font_size = 30
+text = "USE ARROWS"
+vertical_alignment = 1
+
+[node name="VSeparator" type="VSeparator" parent="TabContainer/Controls/MarginContainer/VBoxContainer/Control/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 6
+theme_override_constants/separation = 100
+
+[node name="CheckButton" type="CheckButton" parent="TabContainer/Controls/MarginContainer/VBoxContainer/Control/HBoxContainer"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+size_flags_horizontal = 3
+button_pressed = true
+expand_icon = true
+
+[node name="HSeparator2" type="HSeparator" parent="TabContainer/Controls/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 20
+theme_override_styles/separator = SubResource("StyleBoxEmpty_nxhgt")
+
+[node name="Sound" type="TabBar" parent="TabContainer"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="TabContainer/Sound"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 24
+
+[node name="MarginContainer" type="MarginContainer" parent="TabContainer/Sound/MarginContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_top = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Sound/MarginContainer/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 100
+
+[node name="Audio_Slider_Settings2" parent="TabContainer/Sound/MarginContainer/MarginContainer/VBoxContainer" instance=ExtResource("4_31l8l")]
+layout_mode = 2
+
+[node name="Audio_Slider_Settings3" parent="TabContainer/Sound/MarginContainer/MarginContainer/VBoxContainer" instance=ExtResource("4_31l8l")]
+layout_mode = 2
+bus_name = "Musics"
+
+[node name="Audio_Slider_Settings4" parent="TabContainer/Sound/MarginContainer/MarginContainer/VBoxContainer" instance=ExtResource("4_31l8l")]
+layout_mode = 2
+bus_name = "SfxVol"
+
+[node name="Accesibility" type="TabBar" parent="TabContainer"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="TabContainer/Accesibility"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 24
+
+[node name="ScrollContainer" type="ScrollContainer" parent="TabContainer/Accesibility/MarginContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Accesibility/MarginContainer/ScrollContainer"]
+layout_mode = 2
+
+[node name="Subtitles_Toggle_Button" parent="TabContainer/Accesibility/MarginContainer/ScrollContainer/VBoxContainer" instance=ExtResource("5_j7qw4")]
+layout_mode = 2
