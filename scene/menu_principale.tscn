@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://bqqyxsg5ruas7"]
+[gd_scene load_steps=16 format=3 uid="uid://bqqyxsg5ruas7"]
 
 [ext_resource type="Script" uid="uid://dlphdji8xi84i" path="res://script/menu_principale.gd" id="1_6ob8s"]
 [ext_resource type="Texture2D" uid="uid://wjbr8rl8ams0" path="res://materials/Progetto senza titolo (1).png" id="1_xhhi6"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://cgor1opkcsnqw" path="res://scene/options_menu.tscn" id="5_naq42"]
 [ext_resource type="Texture2D" uid="uid://bqdi4r03efm15" path="res://materials/40e4425fc69645b70fbe78a1d814ee93-removebg-preview.png" id="5_seno8"]
 [ext_resource type="AudioStream" uid="uid://s48a7nbrlqx" path="res://Music/Feast-Dash.ogg" id="6_4qw8r"]
+[ext_resource type="PackedScene" uid="uid://r0rtan8shqgb" path="res://scene/credits_menu.tscn" id="8_elgs4"]
 [ext_resource type="PackedScene" uid="uid://ei0gt35qrh21" path="res://scene/levels_menu.tscn" id="8_v33tj"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_v33tj"]
@@ -160,6 +161,10 @@ visible = false
 layout_mode = 1
 
 [node name="Levels_menu" parent="." instance=ExtResource("8_v33tj")]
+visible = false
+layout_mode = 1
+
+[node name="Credits_Menu" parent="." instance=ExtResource("8_elgs4")]
 visible = false
 layout_mode = 1
 

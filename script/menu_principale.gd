@@ -10,7 +10,7 @@ extends Control
 @export var start_level = preload("res://scene/main.tscn")
 @onready var Options_Menu= $Options_Menu as OptionMenu
 @onready  var Levels_menu = $Levels_menu as LevelsMenu
-
+@onready var Credits_menu = $Credits_Menu as CreditsMenu
 
 func _ready():
 	handle_connecting_signals()
@@ -29,6 +29,10 @@ func on_levels_pressed() -> void:
 	margin_cointainer.visible = false
 	Levels_menu.visible = true
 	
+func on_credits_pressed() -> void:
+	margin_cointainer.visible = false
+	Credits_menu.visible = true
+	
 func on_exit_option_menu() -> void:
 	margin_cointainer.visible= true
 	Options_Menu.visible=false
@@ -39,6 +43,7 @@ func handle_connecting_signals()-> void:
 	Exit_Button.button_down.connect(on_exit_pressed)
 	Options_Menu.exit_option_menu.connect(on_exit_option_menu)
 	Level_button.button_down.connect(on_levels_pressed)
+	Credits_button.button_down.connect(on_credits_pressed)
 	
 	
 	
