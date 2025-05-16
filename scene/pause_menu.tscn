@@ -284,8 +284,12 @@ layout_mode = 2
 [node name="Label" type="Label" parent="PanelContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 6
-theme_override_colors/font_shadow_color = Color(0.332881, 0.332881, 0.332881, 1)
-theme_override_constants/shadow_outline_size = 3
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 5
+theme_override_constants/shadow_offset_y = 5
+theme_override_constants/outline_size = 10
+theme_override_constants/shadow_outline_size = 1
 theme_override_fonts/font = ExtResource("3_cq4tv")
 theme_override_font_sizes/font_size = 42
 text = "Pause"
