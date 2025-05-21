@@ -2,7 +2,7 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dl4qwei3k3lav"
+uid="uid://nsv5c416u7e7"
 path.s3tc="res://.godot/imported/tincanfish2_tincanfish2_normal.png-2efdab2f553036e237d48e343d757482.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
@@ -28,7 +28,7 @@ compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
 roughness/mode=1
-roughness/src_normal="res://kitchen food gltf/tincanfish2_tincanfish2_normal.png"
+roughness/src_normal="res://kitchen food gltf/save/tincanfish2_tincanfish2_normal.png"
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/normal_map_invert_y=false

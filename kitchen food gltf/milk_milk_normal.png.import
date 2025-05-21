@@ -2,7 +2,7 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b3yoim14tpwon"
+uid="uid://dwl6mx7j4eavl"
 path.s3tc="res://.godot/imported/milk_milk_normal.png-2888cd8a1cf364e4e50ff8e8e504562a.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
@@ -28,7 +28,7 @@ compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
 roughness/mode=1
-roughness/src_normal="res://kitchen food gltf/milk_milk_normal.png"
+roughness/src_normal="res://kitchen food gltf/save/milk_milk_normal.png"
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/normal_map_invert_y=false

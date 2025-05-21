@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=3 uid="uid://tfn7jui7g42n"]
+
+[ext_resource type="Script" uid="uid://cubyviji2glxu" path="res://script/food.gd" id="1_ragjl"]
+[ext_resource type="PackedScene" uid="uid://b6kqqiaqp7pim" path="res://kitchen food gltf/yaourt.glb" id="2_ragjl"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hepeg"]
+size = Vector3(0.0979004, 0.10791, 0.0986328)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_u7w4u"]
+size = Vector3(0.134521, 0.0136719, 0.137695)
+
+[node name="yogurt" type="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0480673, 0)
+collision_layer = 8
+script = ExtResource("1_ragjl")
+
+[node name="yaourt2" parent="." instance=ExtResource("2_ragjl")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.00257181, 0)
+shape = SubResource("BoxShape3D_hepeg")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0574161, 0)
+shape = SubResource("BoxShape3D_u7w4u")
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1.04, 0, 0, 0, 1.04, 0, 0, 0, 1.04, 0, -0.00257181, 0)
+shape = SubResource("BoxShape3D_hepeg")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1.04, 0, 0, 0, 1.04, 0, 0, 0, 1.04, 0, 0.0574161, 0)
+shape = SubResource("BoxShape3D_u7w4u")
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]

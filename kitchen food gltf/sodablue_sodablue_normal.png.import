@@ -2,7 +2,7 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cgnl1n033p1wd"
+uid="uid://cldfhet2dmmg2"
 path.s3tc="res://.godot/imported/sodablue_sodablue_normal.png-be0e527702fc9d3885776b419038be7b.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
@@ -28,7 +28,7 @@ compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
 roughness/mode=1
-roughness/src_normal="res://kitchen food gltf/sodablue_sodablue_normal.png"
+roughness/src_normal="res://kitchen food gltf/save/sodablue_sodablue_normal.png"
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/normal_map_invert_y=false

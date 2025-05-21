@@ -1,0 +1,71 @@
+[gd_scene load_steps=7 format=3 uid="uid://b0geflfdxqumi"]
+
+[ext_resource type="Script" uid="uid://cubyviji2glxu" path="res://script/food.gd" id="1_a5ly7"]
+[ext_resource type="PackedScene" uid="uid://cuiohac573cbc" path="res://Food Pack - Oct 2019/Sushi_Nigiri1.fbx" id="2_r2n1r"]
+[ext_resource type="PackedScene" uid="uid://cwj00js3pjcow" path="res://Food Pack - Oct 2019/Sushi_Roll2.fbx" id="3_faowv"]
+[ext_resource type="PackedScene" uid="uid://b5w7v8nayfbgj" path="res://Food Pack - Oct 2019/Sashimi_Salmon.fbx" id="4_aqakn"]
+[ext_resource type="PackedScene" uid="uid://df7dneg4m1r3x" path="res://kitchen gltf items/cuttingboard.gltf" id="5_gdeny"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xlju3"]
+size = Vector3(1.52563, 0.315384, 1.03027)
+
+[node name="sushi" type="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 0.965926, -0.258819, 0, 0.258819, 0.965926, 0, 0.0905484, 0)
+collision_layer = 8
+script = ExtResource("1_a5ly7")
+
+[node name="Sushi_Nigiri1" parent="." instance=ExtResource("2_r2n1r")]
+transform = Transform3D(0.497849, 0, 0.0463243, 0, 0.5, 0, -0.0463243, 0, 0.497849, -0.391724, 0.13861, 0.259141)
+
+[node name="Sushi_Nigiri4" parent="." instance=ExtResource("2_r2n1r")]
+transform = Transform3D(0.221809, 0, -0.448108, 0, 0.5, 0, 0.448108, 0, 0.221809, -0.112495, 0.13861, -0.0200884)
+
+[node name="Sushi_Nigiri2" parent="." instance=ExtResource("2_r2n1r")]
+transform = Transform3D(0.496883, 0, -0.0557432, 0, 0.5, 0, 0.0557432, 0, 0.496883, -0.391724, 0.13861, 0.038168)
+
+[node name="Sushi_Nigiri3" parent="." instance=ExtResource("2_r2n1r")]
+transform = Transform3D(0.490077, 0, -0.0991195, 0, 0.5, 0, 0.0991195, 0, 0.490077, -0.391724, 0.13861, -0.216955)
+
+[node name="Sushi_Roll2" parent="." instance=ExtResource("3_faowv")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -0.0890328, 0.182805, -0.304251)
+
+[node name="Sushi_Roll3" parent="." instance=ExtResource("3_faowv")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0.287951, 0.182805, -0.2359)
+
+[node name="Sushi_Roll4" parent="." instance=ExtResource("3_faowv")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0.088581, 0.182805, -0.097973)
+
+[node name="Sushi_Roll5" parent="." instance=ExtResource("3_faowv")]
+transform = Transform3D(-2.18557e-08, -0.5, 0, 0.5, -2.18557e-08, 0, 0, 0, 0.5, 0.176778, 0.214818, -0.287612)
+
+[node name="Sushi_Roll6" parent="." instance=ExtResource("3_faowv")]
+transform = Transform3D(0.353553, -0.353553, 0, 0.353553, 0.353553, 0, 0, 0, 0.5, 0.0883894, 0.214148, -0.281387)
+
+[node name="Sashimi_Salmon" parent="." instance=ExtResource("4_aqakn")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0.383689, 0.184813, 0)
+
+[node name="Sashimi_Salmon2" parent="." instance=ExtResource("4_aqakn")]
+transform = Transform3D(0.4984, 0, 0.039969, 0, 0.5, 0, -0.039969, 0, 0.4984, 0.39976, 0.184813, 0.17276)
+
+[node name="Sashimi_Salmon3" parent="." instance=ExtResource("4_aqakn")]
+transform = Transform3D(0.270524, 0, 0.420496, 0, 0.5, 0, -0.420496, 0, 0.270524, 0.0522299, 0.184813, 0.192849)
+
+[node name="Sashimi_Salmon4" parent="." instance=ExtResource("4_aqakn")]
+transform = Transform3D(-0.394815, 0, 0.306791, 0, 0.5, 0, -0.306791, 0, -0.394815, 0.524308, 0.184813, -0.25914)
+
+[node name="Sashimi_Salmon5" parent="." instance=ExtResource("4_aqakn")]
+transform = Transform3D(-0.394815, 0, 0.306791, 0, 0.5, 0, -0.306791, 0, -0.394815, 0.524308, 0.184813, -0.25914)
+
+[node name="cuttingboard2" parent="." instance=ExtResource("5_gdeny")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.142082, 0)
+shape = SubResource("BoxShape3D_xlju3")
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1.04, 0, 0, 0, 1.04, 0, 0, 0, 1.04, 0, 0.142082, 0)
+shape = SubResource("BoxShape3D_xlju3")
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]

@@ -1,0 +1,41 @@
+[gd_scene load_steps=6 format=3 uid="uid://dbqb26hep0hr1"]
+
+[sub_resource type="Curve" id="Curve_4pm0n"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.688776, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_xjdxb"]
+curve = SubResource("Curve_4pm0n")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_c5443"]
+lifetime_randomness = 0.57
+particle_flag_align_y = true
+spread = 180.0
+initial_velocity_min = 26.0
+initial_velocity_max = 28.0
+scale_min = 0.5
+scale_max = 1.5
+scale_curve = SubResource("CurveTexture_xjdxb")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4pm0n"]
+albedo_color = Color(0.579668, 0.967121, 0.614316, 1)
+emission_enabled = true
+emission = Color(1.92523e-06, 0.662728, 0, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_hfxkd"]
+material = SubResource("StandardMaterial3D_4pm0n")
+top_radius = 0.02
+bottom_radius = 0.0
+height = 0.2
+
+[node name="GPUParticles3D" type="GPUParticles3D"]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0, 0)
+emitting = false
+amount = 28
+lifetime = 0.42
+one_shot = true
+explosiveness = 0.88
+randomness = 0.48
+fixed_fps = 60
+process_material = SubResource("ParticleProcessMaterial_c5443")
+draw_pass_1 = SubResource("CylinderMesh_hfxkd")

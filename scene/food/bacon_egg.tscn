@@ -1,0 +1,47 @@
+[gd_scene load_steps=6 format=3 uid="uid://dq7ovek6rrd7e"]
+
+[ext_resource type="Script" uid="uid://cubyviji2glxu" path="res://script/food.gd" id="1_ky3wf"]
+[ext_resource type="PackedScene" uid="uid://dfqybpx05h6xw" path="res://Food Pack - Oct 2019/Bacon_Cooked.fbx" id="2_d4up0"]
+[ext_resource type="PackedScene" uid="uid://bw5w0mxsdmi86" path="res://Food Pack - Oct 2019/Egg_Fried.fbx" id="3_8a7y5"]
+[ext_resource type="PackedScene" uid="uid://ckdo1pbcdp8m2" path="res://kitchen gltf items/plate.gltf" id="4_6atsv"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xlju3"]
+size = Vector3(1.65234, 0.190796, 1.75415)
+
+[node name="bacon_egg" type="StaticBody3D"]
+transform = Transform3D(0.193185, 0.0517638, 0, -0.0517638, 0.193185, 0, 0, 0, 0.2, 0, 0.0488179, 0)
+collision_layer = 8
+script = ExtResource("1_ky3wf")
+
+[node name="Bacon_Cooked" parent="." instance=ExtResource("2_d4up0")]
+
+[node name="Bacon_Cooked3" parent="." instance=ExtResource("2_d4up0")]
+transform = Transform3D(0.993776, 0, -0.1114, 0, 1, 0, 0.1114, 0, 0.993776, 0, 0.00656766, 0.135787)
+
+[node name="Bacon_Cooked5" parent="." instance=ExtResource("2_d4up0")]
+transform = Transform3D(0.965998, 0, 0.258549, 0, 1, 0, -0.258549, 0, 0.965998, 0, 7.66516e-05, 0.352117)
+
+[node name="Bacon_Cooked2" parent="." instance=ExtResource("2_d4up0")]
+transform = Transform3D(0.870081, 0, -0.49291, 0, 1, 0, 0.49291, 0, 0.870081, -0.0238478, 0.0181067, -0.0340682)
+
+[node name="Bacon_Cooked4" parent="." instance=ExtResource("2_d4up0")]
+transform = Transform3D(0.987164, 0, 0.159709, 0, 1, 0, -0.159709, 0, 0.987164, -0.00498199, 0.025582, 0.233987)
+
+[node name="Egg_Fried" parent="." instance=ExtResource("3_8a7y5")]
+transform = Transform3D(-0.563209, 0, -0.826315, 0, 1, 0, 0.826315, 0, -0.563209, 0.196691, -0.0136943, -0.4699)
+
+[node name="plate2" parent="." instance=ExtResource("4_6atsv")]
+transform = Transform3D(1.725, 0, 0, 0, 0.57, 0, 0, 0, 1.725, -0.00200772, -0.071649, -0.138366)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000920296, 0.0100403, -0.154419)
+shape = SubResource("BoxShape3D_xlju3")
+
+[node name="Area3D" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.32831e-10, 0, 0)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1.04, 0, 0, 0, 1.04, 0, 0, 0, 1.04, -0.000920295, 0.0100403, -0.154419)
+shape = SubResource("BoxShape3D_xlju3")
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]

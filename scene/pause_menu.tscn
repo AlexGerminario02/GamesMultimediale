@@ -320,6 +320,18 @@ theme_override_styles/hover = SubResource("StyleBoxTexture_71u2q")
 theme_override_styles/normal = SubResource("StyleBoxTexture_r1gbo")
 text = "Restart"
 
+[node name="Menu" type="Button" parent="PanelContainer/VBoxContainer"]
+process_mode = 3
+custom_minimum_size = Vector2(144, 56)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 2
+theme_override_fonts/font = ExtResource("3_cq4tv")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/hover = SubResource("StyleBoxTexture_71u2q")
+theme_override_styles/normal = SubResource("StyleBoxTexture_r1gbo")
+text = "Menu"
+
 [node name="Quit" type="Button" parent="PanelContainer/VBoxContainer"]
 process_mode = 3
 custom_minimum_size = Vector2(144, 56)
@@ -340,4 +352,5 @@ libraries = {
 
 [connection signal="pressed" from="PanelContainer/VBoxContainer/Resume" to="." method="_on_resume_pressed"]
 [connection signal="pressed" from="PanelContainer/VBoxContainer/Restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="PanelContainer/VBoxContainer/Menu" to="." method="_on_menu_pressed"]
 [connection signal="pressed" from="PanelContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]

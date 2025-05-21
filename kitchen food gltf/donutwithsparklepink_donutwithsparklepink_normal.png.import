@@ -2,7 +2,7 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://byrovpikdd2i1"
+uid="uid://bkf7ximhn11y4"
 path.s3tc="res://.godot/imported/donutwithsparklepink_donutwithsparklepink_normal.png-f97a38367a42fc1d76df366cb28efe65.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
@@ -28,7 +28,7 @@ compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
 roughness/mode=1
-roughness/src_normal="res://kitchen food gltf/donutwithsparklepink_donutwithsparklepink_normal.png"
+roughness/src_normal="res://kitchen food gltf/save/donutwithsparklepink_donutwithsparklepink_normal.png"
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/normal_map_invert_y=false
