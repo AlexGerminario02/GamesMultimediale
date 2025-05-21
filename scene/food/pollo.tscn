@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://cdgei7ytyqduf"]
+
+[ext_resource type="Script" uid="uid://cubyviji2glxu" path="res://script/food.gd" id="1_sesfv"]
+[ext_resource type="PackedScene" uid="uid://x6j2sug7mj53" path="res://Food Pack - Oct 2019/Turkey.glb" id="2_sesfv"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xlju3"]
+size = Vector3(0.192627, 0.0819094, 0.14209)
+
+[node name="pollo" type="StaticBody3D"]
+transform = Transform3D(0.965926, -0.258819, 0, 0.258819, 0.965926, 0, 0, 0, 1, 0, -0.0055564, 0)
+collision_layer = 8
+script = ExtResource("1_sesfv")
+
+[node name="Turkey" parent="." instance=ExtResource("2_sesfv")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0012207, 0.0390931, 9.15569e-05)
+shape = SubResource("BoxShape3D_xlju3")
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1.04, 0, 0, 0, 1.04, 0, 0, 0, 1.04, -0.0012207, 0.0390931, 9.15569e-05)
+shape = SubResource("BoxShape3D_xlju3")
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]

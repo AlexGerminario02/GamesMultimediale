@@ -2,7 +2,7 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dv0d3p8w18sc8"
+uid="uid://d0y42y5ucv8w7"
 path.s3tc="res://.godot/imported/eggpackage_eggpackage_normal.png-4775381faff198cbff09d0e276fdb72a.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
@@ -28,7 +28,7 @@ compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
 roughness/mode=1
-roughness/src_normal="res://kitchen food gltf/eggpackage_eggpackage_normal.png"
+roughness/src_normal="res://kitchen food gltf/save/eggpackage_eggpackage_normal.png"
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/normal_map_invert_y=false

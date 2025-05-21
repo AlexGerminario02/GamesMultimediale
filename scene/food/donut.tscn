@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://divu4ru8jrdtu"]
+
+[ext_resource type="Script" uid="uid://cubyviji2glxu" path="res://script/food.gd" id="1_55pov"]
+[ext_resource type="PackedScene" uid="uid://xoah6ijvswf5" path="res://kitchen food gltf/donutwithsparklepink.glb" id="2_55pov"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_b58a0"]
+height = 0.108398
+radius = 0.131348
+
+[node name="donut" type="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 0.866025, -0.5, 0, 0.5, 0.866025, 0, 0.0334246, 0)
+collision_layer = 8
+script = ExtResource("1_55pov")
+
+[node name="donutwithsparklepink2" parent="." instance=ExtResource("2_55pov")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0110461, 0.0147109, 0)
+shape = SubResource("CylinderShape3D_b58a0")
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1.04, 0, 0, 0, 1.04, 0, 0, 0, 1.04, 0.0110461, 0.0133218, 0)
+shape = SubResource("CylinderShape3D_b58a0")
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]

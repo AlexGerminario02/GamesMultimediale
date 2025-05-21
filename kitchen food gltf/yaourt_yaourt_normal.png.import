@@ -2,7 +2,7 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bspx1ebwthih0"
+uid="uid://b6pq0ftbqq3bi"
 path.s3tc="res://.godot/imported/yaourt_yaourt_normal.png-28ac1ec6db309764a232b4e8551f29e7.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
@@ -28,7 +28,7 @@ compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
 roughness/mode=1
-roughness/src_normal="res://kitchen food gltf/yaourt_yaourt_normal.png"
+roughness/src_normal="res://kitchen food gltf/save/yaourt_yaourt_normal.png"
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/normal_map_invert_y=false

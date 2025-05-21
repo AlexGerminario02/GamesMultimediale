@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://frmbp67tmh6f"]
+
+[ext_resource type="Script" uid="uid://cubyviji2glxu" path="res://script/food.gd" id="1_n5efk"]
+[ext_resource type="PackedScene" uid="uid://dlndwy7m8vhrh" path="res://Food Pack - Oct 2019/Fish.fbx" id="2_n5efk"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_u7w4u"]
+size = Vector3(0.649647, 0.0671387, 0.220947)
+
+[node name="fish" type="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 0.965926, -0.258819, 0, 0.258819, 0.965926, 0, 0.0180687, 0)
+collision_layer = 8
+script = ExtResource("1_n5efk")
+
+[node name="Fish" parent="." instance=ExtResource("2_n5efk")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0520344, 0.0165226, -0.00915527)
+shape = SubResource("BoxShape3D_u7w4u")
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1.04, 0, 0, 0, 1.04, 0, 0, 0, 1.04, -0.0520344, 0.0165226, -0.00915527)
+shape = SubResource("BoxShape3D_u7w4u")
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]

@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="GamesCO"
+config/name="Games actual"
 run/main_scene="uid://bqqyxsg5ruas7"
 config/features=PackedStringArray("4.4", "Mobile")
 boot_splash/show_image=false
@@ -26,6 +26,7 @@ SignalBus="*res://AutoLoads/SignalBus.gd"
 SettingsContainer="*res://AutoLoads/SettingsDataContainer.gd"
 SettingSignalBus="*res://AutoLoads/SettingSignalBus.gd"
 SaveManager="*res://AutoLoads/SaveManager.gd"
+GameState="*res://script/GameState.gd"
 
 [display]
 
@@ -34,6 +35,17 @@ window/size/viewport_height=1280
 window/size/mode=3
 window/stretch/mode="canvas_items"
 window/handheld/orientation=1
+
+[filesystem]
+
+import/blender/enabled=false
+
+[importer_defaults]
+
+animation_library={
+&"animation/fps": 60.0,
+&"fbx/importer": 1
+}
 
 [input]
 

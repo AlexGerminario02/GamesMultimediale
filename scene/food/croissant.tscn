@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://0fit2nqgb2vr"]
+
+[ext_resource type="Script" uid="uid://cubyviji2glxu" path="res://script/food.gd" id="1_rm8js"]
+[ext_resource type="PackedScene" uid="uid://cgdfatvyntgep" path="res://Food Pack - Oct 2019/Croissant.fbx" id="2_rm8js"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_l5ah5"]
+size = Vector3(0.265381, 0.116211, 0.156006)
+
+[node name="croissant" type="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 0.866025, -0.5, 0, 0.5, 0.866025, 0, 0.0505655, 0)
+collision_layer = 8
+script = ExtResource("1_rm8js")
+
+[node name="Croissant" parent="." instance=ExtResource("2_rm8js")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.0179018)
+shape = SubResource("BoxShape3D_l5ah5")
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1.04, 0, 0, 0, 1.04, 0, 0, 0, 1.04, 0, 0, 0.0179018)
+shape = SubResource("BoxShape3D_l5ah5")
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]

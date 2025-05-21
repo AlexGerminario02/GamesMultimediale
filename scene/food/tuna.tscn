@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://cq0hd6o8iihnl"]
+
+[ext_resource type="Script" uid="uid://cubyviji2glxu" path="res://script/food.gd" id="1_t3joy"]
+[ext_resource type="PackedScene" uid="uid://bys0sa6da4a37" path="res://kitchen food gltf/tincanfish2.glb" id="2_t3joy"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_08okx"]
+height = 0.25
+radius = 0.201172
+
+[node name="tuna" type="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.109278, 0)
+collision_layer = 8
+script = ExtResource("1_t3joy")
+
+[node name="tincanfish22" parent="." instance=ExtResource("2_t3joy")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000710309, 0.000830583, 0)
+shape = SubResource("CylinderShape3D_08okx")
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1.04, 0, 0, 0, 1.04, 0, 0, 0, 1.04, 0, 0, 0)
+shape = SubResource("CylinderShape3D_08okx")
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]

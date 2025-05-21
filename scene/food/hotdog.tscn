@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://cjfde7d6waby6"]
+
+[ext_resource type="Script" uid="uid://cubyviji2glxu" path="res://script/food.gd" id="1_l8lbj"]
+[ext_resource type="PackedScene" uid="uid://bpvkwgvtlhjg1" path="res://Food Pack - Oct 2019/Hotdog.fbx" id="2_l8lbj"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xlju3"]
+size = Vector3(0.165771, 0.0889893, 0.341553)
+
+[node name="hotdog" type="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 0.866025, -0.5, 0, 0.5, 0.866025, 0, 0.0570426, 0)
+collision_layer = 8
+script = ExtResource("1_l8lbj")
+
+[node name="Hotdog" parent="." instance=ExtResource("2_l8lbj")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.019989, 0)
+shape = SubResource("BoxShape3D_xlju3")
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1.04, 0, 0, 0, 1.04, 0, 0, 0, 1.04, 0, -0.019989, 0)
+shape = SubResource("BoxShape3D_xlju3")
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]

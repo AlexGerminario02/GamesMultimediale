@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://c5gfvug13m4dk"]
+
+[ext_resource type="Script" uid="uid://cubyviji2glxu" path="res://script/food.gd" id="1_b5kgv"]
+[ext_resource type="PackedScene" uid="uid://cx0cj22cayaei" path="res://kitchen gltf items/food_ingredient_tomato_slice.gltf" id="2_b5kgv"]
+[ext_resource type="PackedScene" uid="uid://ba0e2cjmgfcab" path="res://kitchen gltf items/food_ingredient_tomato_slices.gltf" id="2_dylwp"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_rso40"]
+size = Vector3(0.773132, 0.435066, 0.795044)
+
+[node name="pomodori" type="StaticBody3D"]
+collision_layer = 8
+script = ExtResource("1_b5kgv")
+
+[node name="food_ingredient_tomato_slice2" parent="." instance=ExtResource("2_b5kgv")]
+transform = Transform3D(1, 0, 0, 0, 0.801285, -0.598283, 0, 0.598283, 0.801285, 0.0298029, 0.180485, 0.304365)
+
+[node name="food_ingredient_tomato_slices2" parent="." instance=ExtResource("2_dylwp")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0218201, 0.204914, 0.060608)
+shape = SubResource("BoxShape3D_rso40")
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1.04, 0, 0, 0, 1.04, 0, 0, 0, 1.04, 0.0218201, 0.204914, 0.060608)
+shape = SubResource("BoxShape3D_rso40")
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]

@@ -1,0 +1,474 @@
+[1mdiff --git a/Food Pack - Oct 2019/Avocado.fbx b/Food Pack - Oct 2019/Avocado.fbx[m
+[1mnew file mode 100644[m
+[1mindex 0000000..f123517[m
+Binary files /dev/null and b/Food Pack - Oct 2019/Avocado.fbx differ
+[1mdiff --git a/Food Pack - Oct 2019/Avocado.fbx.import b/Food Pack - Oct 2019/Avocado.fbx.import[m
+[1mnew file mode 100644[m
+[1mindex 0000000..7bc7d36[m
+[1m--- /dev/null[m
+[1m+++ b/Food Pack - Oct 2019/Avocado.fbx.import[m	
+[36m@@ -0,0 +1,38 @@[m
+[32m+[m[32m[remap][m
+[32m+[m
+[32m+[m[32mimporter="scene"[m
+[32m+[m[32mimporter_version=1[m
+[32m+[m[32mtype="PackedScene"[m
+[32m+[m[32muid="uid://b4l6hle8h00qc"[m
+[32m+[m[32mpath="res://.godot/imported/Avocado.fbx-816c9e3b7258db8f935d5c1c692bd2d8.scn"[m
+[32m+[m
+[32m+[m[32m[deps][m
+[32m+[m
+[32m+[m[32msource_file="res://Food Pack - Oct 2019/Avocado.fbx"[m
+[32m+[m[32mdest_files=["res://.godot/imported/Avocado.fbx-816c9e3b7258db8f935d5c1c692bd2d8.scn"][m
+[32m+[m
+[32m+[m[32m[params][m
+[32m+[m
+[32m+[m[32mnodes/root_type=""[m
+[32m+[m[32mnodes/root_name=""[m
+[32m+[m[32mnodes/apply_root_scale=true[m
+[32m+[m[32mnodes/root_scale=1.0[m
+[32m+[m[32mnodes/import_as_skeleton_bones=false[m
+[32m+[m[32mnodes/use_node_type_suffixes=true[m
+[32m+[m[32mmeshes/ensure_tangents=true[m
+[32m+[m[32mmeshes/generate_lods=true[m
+[32m+[m[32mmeshes/create_shadow_meshes=true[m
+[32m+[m[32mmeshes/light_baking=1[m
+[32m+[m[32mmeshes/lightmap_texel_size=0.2[m
+[32m+[m[32mmeshes/force_disable_compression=false[m
+[32m+[m[32mskins/use_named_skins=true[m
+[32m+[m[32manimation/import=true[m
+[32m+[m[32manimation/fps=30[m
+[32m+[m[32manimation/trimming=true[m
+[32m+[m[32manimation/remove_immutable_tracks=true[m
+[32m+[m[32manimation/import_rest_as_RESET=false[m
+[32m+[m[32mimport_script/path=""[m
+[32m+[m[32m_subresources={}[m
+[32m+[m[32mfbx/importer=0[m
+[32m+[m[32mfbx/allow_geometry_helper_nodes=false[m
+[32m+[m[32mfbx/embedded_image_handling=1[m
+[1mdiff --git a/Food Pack - Oct 2019/Bacon_Cooked.fbx b/Food Pack - Oct 2019/Bacon_Cooked.fbx[m
+[1mnew file mode 100644[m
+[1mindex 0000000..df5a7c7[m
+Binary files /dev/null and b/Food Pack - Oct 2019/Bacon_Cooked.fbx differ
+[1mdiff --git a/Food Pack - Oct 2019/Bacon_Cooked.fbx.import b/Food Pack - Oct 2019/Bacon_Cooked.fbx.import[m
+[1mnew file mode 100644[m
+[1mindex 0000000..3240c98[m
+[1m--- /dev/null[m
+[1m+++ b/Food Pack - Oct 2019/Bacon_Cooked.fbx.import[m	
+[36m@@ -0,0 +1,38 @@[m
+[32m+[m[32m[remap][m
+[32m+[m
+[32m+[m[32mimporter="scene"[m
+[32m+[m[32mimporter_version=1[m
+[32m+[m[32mtype="PackedScene"[m
+[32m+[m[32muid="uid://dfqybpx05h6xw"[m
+[32m+[m[32mpath="res://.godot/imported/Bacon_Cooked.fbx-632bf97cd0544478fb15099943d51141.scn"[m
+[32m+[m
+[32m+[m[32m[deps][m
+[32m+[m
+[32m+[m[32msource_file="res://Food Pack - Oct 2019/Bacon_Cooked.fbx"[m
+[32m+[m[32mdest_files=["res://.godot/imported/Bacon_Cooked.fbx-632bf97cd0544478fb15099943d51141.scn"][m
+[32m+[m
+[32m+[m[32m[params][m
+[32m+[m
+[32m+[m[32mnodes/root_type=""[m
+[32m+[m[32mnodes/root_name=""[m
+[32m+[m[32mnodes/apply_root_scale=true[m
+[32m+[m[32mnodes/root_scale=1.0[m
+[32m+[m[32mnodes/import_as_skeleton_bones=false[m
+[32m+[m[32mnodes/use_node_type_suffixes=true[m
+[32m+[m[32mmeshes/ensure_tangents=true[m
+[32m+[m[32mmeshes/generate_lods=true[m
+[32m+[m[32mmeshes/create_shadow_meshes=true[m
+[32m+[m[32mmeshes/light_baking=1[m
+[32m+[m[32mmeshes/lightmap_texel_size=0.2[m
+[32m+[m[32mmeshes/force_disable_compression=false[m
+[32m+[m[32mskins/use_named_skins=true[m
+[32m+[m[32manimation/import=true[m
+[32m+[m[32manimation/fps=30[m
+[32m+[m[32manimation/trimming=true[m
+[32m+[m[32manimation/remove_immutable_tracks=true[m
+[32m+[m[32manimation/import_rest_as_RESET=false[m
+[32m+[m[32mimport_script/path=""[m
+[32m+[m[32m_subresources={}[m
+[32m+[m[32mfbx/importer=0[m
+[32m+[m[32mfbx/allow_geometry_helper_nodes=false[m
+[32m+[m[32mfbx/embedded_image_handling=1[m
+[1mdiff --git a/Food Pack - Oct 2019/Bread_Slice.fbx b/Food Pack - Oct 2019/Bread_Slice.fbx[m
+[1mnew file mode 100644[m
+[1mindex 0000000..a277be1[m
+Binary files /dev/null and b/Food Pack - Oct 2019/Bread_Slice.fbx differ
+[1mdiff --git a/Food Pack - Oct 2019/Bread_Slice.fbx.import b/Food Pack - Oct 2019/Bread_Slice.fbx.import[m
+[1mnew file mode 100644[m
+[1mindex 0000000..7552531[m
+[1m--- /dev/null[m
+[1m+++ b/Food Pack - Oct 2019/Bread_Slice.fbx.import[m	
+[36m@@ -0,0 +1,38 @@[m
+[32m+[m[32m[remap][m
+[32m+[m
+[32m+[m[32mimporter="scene"[m
+[32m+[m[32mimporter_version=1[m
+[32m+[m[32mtype="PackedScene"[m
+[32m+[m[32muid="uid://dyj6qgg6rm8m3"[m
+[32m+[m[32mpath="res://.godot/imported/Bread_Slice.fbx-6247a448868c0eda1d6b93388ee77eeb.scn"[m
+[32m+[m
+[32m+[m[32m[deps][m
+[32m+[m
+[32m+[m[32msource_file="res://Food Pack - Oct 2019/Bread_Slice.fbx"[m
+[32m+[m[32mdest_files=["res://.godot/imported/Bread_Slice.fbx-6247a448868c0eda1d6b93388ee77eeb.scn"][m
+[32m+[m
+[32m+[m[32m[params][m
+[32m+[m
+[32m+[m[32mnodes/root_type=""[m
+[32m+[m[32mnodes/root_name=""[m
+[32m+[m[32mnodes/apply_root_scale=true[m
+[32m+[m[32mnodes/root_scale=1.0[m
+[32m+[m[32mnodes/import_as_skeleton_bones=false[m
+[32m+[m[32mnodes/use_node_type_suffixes=true[m
+[32m+[m[32mmeshes/ensure_tangents=true[m
+[32m+[m[32mmeshes/generate_lods=true[m
+[32m+[m[32mmeshes/create_shadow_meshes=true[m
+[32m+[m[32mmeshes/light_baking=1[m
+[32m+[m[32mmeshes/lightmap_texel_size=0.2[m
+[32m+[m[32mmeshes/force_disable_compression=false[m
+[32m+[m[32mskins/use_named_skins=true[m
+[32m+[m[32manimation/import=true[m
+[32m+[m[32manimation/fps=30[m
+[32m+[m[32manimation/trimming=true[m
+[32m+[m[32manimation/remove_immutable_tracks=true[m
+[32m+[m[32manimation/import_rest_as_RESET=false[m
+[32m+[m[32mimport_script/path=""[m
+[32m+[m[32m_subresources={}[m
+[32m+[m[32mfbx/importer=0[m
+[32m+[m[32mfbx/allow_geometry_helper_nodes=false[m
+[32m+[m[32mfbx/embedded_image_handling=1[m
+[1mdiff --git a/Food Pack - Oct 2019/Carrot.glb b/Food Pack - Oct 2019/Carrot.glb[m
+[1mnew file mode 100644[m
+[1mindex 0000000..225c76d[m
+Binary files /dev/null and b/Food Pack - Oct 2019/Carrot.glb differ
+[1mdiff --git a/aliments gltf/bacon.glb.import b/Food Pack - Oct 2019/Carrot.glb.import[m
+[1msimilarity index 73%[m
+[1mrename from aliments gltf/bacon.glb.import[m
+[1mrename to Food Pack - Oct 2019/Carrot.glb.import[m
+[1mindex f155b43..8577bbe 100644[m
+[1m--- a/aliments gltf/bacon.glb.import[m	
+[1m+++ b/Food Pack - Oct 2019/Carrot.glb.import[m	
+[36m@@ -3,13 +3,13 @@[m
+ importer="scene"[m
+ importer_version=1[m
+ type="PackedScene"[m
+[31m-uid="uid://biip2gsklpj8d"[m
+[31m-path="res://.godot/imported/bacon.glb-7c209096ab389b1ec40ed045a7da9bbd.scn"[m
+[32m+[m[32muid="uid://rru85376o5hf"[m
+[32m+[m[32mpath="res://.godot/imported/Carrot.glb-2b9f90b29e609075981049e912b4f15d.scn"[m
+ [m
+ [deps][m
+ [m
+[31m-source_file="res://aliments gltf/bacon.glb"[m
+[31m-dest_files=["res://.godot/imported/bacon.glb-7c209096ab389b1ec40ed045a7da9bbd.scn"][m
+[32m+[m[32msource_file="res://Food Pack - Oct 2019/Carrot.glb"[m
+[32m+[m[32mdest_files=["res://.godot/imported/Carrot.glb-2b9f90b29e609075981049e912b4f15d.scn"][m
+ [m
+ [params][m
+ [m
+[1mdiff --git a/Food Pack - Oct 2019/ChocolateBar.fbx b/Food Pack - Oct 2019/ChocolateBar.fbx[m
+[1mnew file mode 100644[m
+[1mindex 0000000..241592e[m
+Binary files /dev/null and b/Food Pack - Oct 2019/ChocolateBar.fbx differ
+[1mdiff --git a/Food Pack - Oct 2019/ChocolateBar.fbx.import b/Food Pack - Oct 2019/ChocolateBar.fbx.import[m
+[1mnew file mode 100644[m
+[1mindex 0000000..ab7e9dd[m
+[1m--- /dev/null[m
+[1m+++ b/Food Pack - Oct 2019/ChocolateBar.fbx.import[m	
+[36m@@ -0,0 +1,38 @@[m
+[32m+[m[32m[remap][m
+[32m+[m
+[32m+[m[32mimporter="scene"[m
+[32m+[m[32mimporter_version=1[m
+[32m+[m[32mtype="PackedScene"[m
+[32m+[m[32muid="uid://cfc021i4yuj6e"[m
+[32m+[m[32mpath="res://.godot/imported/ChocolateBar.fbx-6e18a16863159625d5176799634a519c.scn"[m
+[32m+[m
+[32m+[m[32m[deps][m
+[32m+[m
+[32m+[m[32msource_file="res://Food Pack - Oct 2019/ChocolateBar.fbx"[m
+[32m+[m[32mdest_files=["res://.godot/imported/ChocolateBar.fbx-6e18a16863159625d5176799634a519c.scn"][m
+[32m+[m
+[32m+[m[32m[params][m
+[32m+[m
+[32m+[m[32mnodes/root_type=""[m
+[32m+[m[32mnodes/root_name=""[m
+[32m+[m[32mnodes/apply_root_scale=true[m
+[32m+[m[32mnodes/root_scale=1.0[m
+[32m+[m[32mnodes/import_as_skeleton_bones=false[m
+[32m+[m[32mnodes/use_node_type_suffixes=true[m
+[32m+[m[32mmeshes/ensure_tangents=true[m
+[32m+[m[32mmeshes/generate_lods=true[m
+[32m+[m[32mmeshes/create_shadow_meshes=true[m
+[32m+[m[32mmeshes/light_baking=1[m
+[32m+[m[32mmeshes/lightmap_texel_size=0.2[m
+[32m+[m[32mmeshes/force_disable_compression=false[m
+[32m+[m[32mskins/use_named_skins=true[m
+[32m+[m[32manimation/import=true[m
+[32m+[m[32manimation/fps=30[m
+[32m+[m[32manimation/trimming=true[m
+[32m+[m[32manimation/remove_immutable_tracks=true[m
+[32m+[m[32manimation/import_rest_as_RESET=false[m
+[32m+[m[32mimport_script/path=""[m
+[32m+[m[32m_subresources={}[m
+[32m+[m[32mfbx/importer=0[m
+[32m+[m[32mfbx/allow_geometry_helper_nodes=false[m
+[32m+[m[32mfbx/embedded_image_handling=1[m
+[1mdiff --git a/Food Pack - Oct 2019/Croissant.fbx b/Food Pack - Oct 2019/Croissant.fbx[m
+[1mnew file mode 100644[m
+[1mindex 0000000..110259d[m
+Binary files /dev/null and b/Food Pack - Oct 2019/Croissant.fbx differ
+[1mdiff --git a/Food Pack - Oct 2019/Croissant.fbx.import b/Food Pack - Oct 2019/Croissant.fbx.import[m
+[1mnew file mode 100644[m
+[1mindex 0000000..d1006a6[m
+[1m--- /dev/null[m
+[1m+++ b/Food Pack - Oct 2019/Croissant.fbx.import[m	
+[36m@@ -0,0 +1,38 @@[m
+[32m+[m[32m[remap][m
+[32m+[m
+[32m+[m[32mimporter="scene"[m
+[32m+[m[32mimporter_version=1[m
+[32m+[m[32mtype="PackedScene"[m
+[32m+[m[32muid="uid://cgdfatvyntgep"[m
+[32m+[m[32mpath="res://.godot/imported/Croissant.fbx-3162aeba7a3b404678ef5a45a3d70326.scn"[m
+[32m+[m
+[32m+[m[32m[deps][m
+[32m+[m
+[32m+[m[32msource_file="res://Food Pack - Oct 2019/Croissant.fbx"[m
+[32m+[m[32mdest_files=["res://.godot/imported/Croissant.fbx-3162aeba7a3b404678ef5a45a3d70326.scn"][m
+[32m+[m
+[32m+[m[32m[params][m
+[32m+[m
+[32m+[m[32mnodes/root_type=""[m
+[32m+[m[32mnodes/root_name=""[m
+[32m+[m[32mnodes/apply_root_scale=true[m
+[32m+[m[32mnodes/root_scale=1.0[m
+[32m+[m[32mnodes/import_as_skeleton_bones=false[m
+[32m+[m[32mnodes/use_node_type_suffixes=true[m
+[32m+[m[32mmeshes/ensure_tangents=true[m
+[32m+[m[32mmeshes/generate_lods=true[m
+[32m+[m[32mmeshes/create_shadow_meshes=true[m
+[32m+[m[32mmeshes/light_baking=1[m
+[32m+[m[32mmeshes/lightmap_texel_size=0.2[m
+[32m+[m[32mmeshes/force_disable_compression=false[m
+[32m+[m[32mskins/use_named_skins=true[m
+[32m+[m[32manimation/import=true[m
+[32m+[m[32manimation/fps=30[m
+[32m+[m[32manimation/trimming=true[m
+[32m+[m[32manimation/remove_immutable_tracks=true[m
+[32m+[m[32manimation/import_rest_as_RESET=false[m
+[32m+[m[32mimport_script/path=""[m
+[32m+[m[32m_subresources={}[m
+[32m+[m[32mfbx/importer=0[m
+[32m+[m[32mfbx/allow_geometry_helper_nodes=false[m
+[32m+[m[32mfbx/embedded_image_handling=1[m
+[1mdiff --git a/Food Pack - Oct 2019/Egg_Fried.fbx b/Food Pack - Oct 2019/Egg_Fried.fbx[m
+[1mnew file mode 100644[m
+[1mindex 0000000..57d168d[m
+Binary files /dev/null and b/Food Pack - Oct 2019/Egg_Fried.fbx differ
+[1mdiff --git a/Food Pack - Oct 2019/Egg_Fried.fbx.import b/Food Pack - Oct 2019/Egg_Fried.fbx.import[m
+[1mnew file mode 100644[m
+[1mindex 0000000..1f86873[m
+[1m--- /dev/null[m
+[1m+++ b/Food Pack - Oct 2019/Egg_Fried.fbx.import[m	
+[36m@@ -0,0 +1,38 @@[m
+[32m+[m[32m[remap][m
+[32m+[m
+[32m+[m[32mimporter="scene"[m
+[32m+[m[32mimporter_version=1[m
+[32m+[m[32mtype="PackedScene"[m
+[32m+[m[32muid="uid://bw5w0mxsdmi86"[m
+[32m+[m[32mpath="res://.godot/imported/Egg_Fried.fbx-d4f544612289e6611fe00b6cb852ef0d.scn"[m
+[32m+[m
+[32m+[m[32m[deps][m
+[32m+[m
+[32m+[m[32msource_file="res://Food Pack - Oct 2019/Egg_Fried.fbx"[m
+[32m+[m[32mdest_files=["res://.godot/imported/Egg_Fried.fbx-d4f544612289e6611fe00b6cb852ef0d.scn"][m
+[32m+[m
+[32m+[m[32m[params][m
+[32m+[m
+[32m+[m[32mnodes/root_type=""[m
+[32m+[m[32mnodes/root_name=""[m
+[32m+[m[32mnodes/apply_root_scale=true[m
+[32m+[m[32mnodes/root_scale=1.0[m
+[32m+[m[32mnodes/import_as_skeleton_bones=false[m
+[32m+[m[32mnodes/use_node_type_suffixes=true[m
+[32m+[m[32mmeshes/ensure_tangents=true[m
+[32m+[m[32mmeshes/generate_lods=true[m
+[32m+[m[32mmeshes/create_shadow_meshes=true[m
+[32m+[m[32mmeshes/light_baking=1[m
+[32m+[m[32mmeshes/lightmap_texel_size=0.2[m
+[32m+[m[32mmeshes/force_disable_compression=false[m
+[32m+[m[32mskins/use_named_skins=true[m
+[32m+[m[32manimation/import=true[m
+[32m+[m[32manimation/fps=30[m
+[32m+[m[32manimation/trimming=true[m
+[32m+[m[32manimation/remove_immutable_tracks=true[m
+[32m+[m[32manimation/import_rest_as_RESET=false[m
+[32m+[m[32mimport_script/path=""[m
+[32m+[m[32m_subresources={}[m
+[32m+[m[32mfbx/importer=0[m
+[32m+[m[32mfbx/allow_geometry_helper_nodes=false[m
+[32m+[m[32mfbx/embedded_image_handling=1[m
+[1mdiff --git a/Food Pack - Oct 2019/Eggplant.glb b/Food Pack - Oct 2019/Eggplant.glb[m
+[1mnew file mode 100644[m
+[1mindex 0000000..821b6da[m
+Binary files /dev/null and b/Food Pack - Oct 2019/Eggplant.glb differ
+[1mdiff --git a/aliments gltf/asparagus.glb.import b/Food Pack - Oct 2019/Eggplant.glb.import[m
+[1msimilarity index 73%[m
+[1mrename from aliments gltf/asparagus.glb.import[m
+[1mrename to Food Pack - Oct 2019/Eggplant.glb.import[m
+[1mindex 7dd706f..9fe1fd2 100644[m
+[1m--- a/aliments gltf/asparagus.glb.import[m	
+[1m+++ b/Food Pack - Oct 2019/Eggplant.glb.import[m	
+[36m@@ -3,13 +3,13 @@[m
+ importer="scene"[m
+ importer_version=1[m
+ type="PackedScene"[m
+[31m-uid="uid://c4pn5bxprvx5c"[m
+[31m-path="res://.godot/imported/asparagus.glb-03f63347e4dd7702a2fcf355f7ca23af.scn"[m
+[32m+[m[32muid="uid://o0turnsq383o"[m
+[32m+[m[32mpath="res://.godot/imported/Eggplant.glb-e49ab1acd8888bf3c68a910b8a8536cf.scn"[m
+ [m
+ [deps][m
+ [m
+[31m-source_file="res://aliments gltf/asparagus.glb"[m
+[31m-dest_files=["res://.godot/imported/asparagus.glb-03f63347e4dd7702a2fcf355f7ca23af.scn"][m
+[32m+[m[32msource_file="res://Food Pack - Oct 2019/Eggplant.glb"[m
+[32m+[m[32mdest_files=["res://.godot/imported/Eggplant.glb-e49ab1acd8888bf3c68a910b8a8536cf.scn"][m
+ [m
+ [params][m
+ [m
+[1mdiff --git a/Food Pack - Oct 2019/Fish.fbx b/Food Pack - Oct 2019/Fish.fbx[m
+[1mnew file mode 100644[m
+[1mindex 0000000..de68520[m
+Binary files /dev/null and b/Food Pack - Oct 2019/Fish.fbx differ
+[1mdiff --git a/Food Pack - Oct 2019/Fish.fbx.import b/Food Pack - Oct 2019/Fish.fbx.import[m
+[1mnew file mode 100644[m
+[1mindex 0000000..b5e72dd[m
+[1m--- /dev/null[m
+[1m+++ b/Food Pack - Oct 2019/Fish.fbx.import[m	
+[36m@@ -0,0 +1,38 @@[m
+[32m+[m[32m[remap][m
+[32m+[m
+[32m+[m[32mimporter="scene"[m
+[32m+[m[32mimporter_version=1[m
+[32m+[m[32mtype="PackedScene"[m
+[32m+[m[32muid="uid://dlndwy7m8vhrh"[m
+[32m+[m[32mpath="res://.godot/imported/Fish.fbx-aa653f7beb3c028eeff95d4a3caa78bf.scn"[m
+[32m+[m
+[32m+[m[32m[deps][m
+[32m+[m
+[32m+[m[32msource_file="res://Food Pack - Oct 2019/Fish.fbx"[m
+[32m+[m[32mdest_files=["res://.godot/imported/Fish.fbx-aa653f7beb3c028eeff95d4a3caa78bf.scn"][m
+[32m+[m
+[32m+[m[32m[params][m
+[32m+[m
+[32m+[m[32mnodes/root_type=""[m
+[32m+[m[32mnodes/root_name=""[m
+[32m+[m[32mnodes/apply_root_scale=true[m
+[32m+[m[32mnodes/root_scale=1.0[m
+[32m+[m[32mnodes/import_as_skeleton_bones=false[m
+[32m+[m[32mnodes/use_node_type_suffixes=true[m
+[32m+[m[32mmeshes/ensure_tangents=true[m
+[32m+[m[32mmeshes/generate_lods=true[m
+[32m+[m[32mmeshes/create_shadow_meshes=true[m
+[32m+[m[32mmeshes/light_baking=1[m
+[32m+[m[32mmeshes/lightmap_texel_size=0.2[m
+[32m+[m[32mmeshes/force_disable_compression=false[m
+[32m+[m[32mskins/use_named_skins=true[m
+[32m+[m[32manimation/import=true[m
+[32m+[m[32manimation/fps=30[m
+[32m+[m[32manimation/trimming=true[m
+[32m+[m[32manimation/remove_immutable_tracks=true[m
+[32m+[m[32manimation/import_rest_as_RESET=false[m
+[32m+[m[32mimport_script/path=""[m
+[32m+[m[32m_subresources={}[m
+[32m+[m[32mfbx/importer=0[m
+[32m+[m[32mfbx/allow_geometry_helper_nodes=false[m
+[32m+[m[32mfbx/embedded_image_handling=1[m
+[1mdiff --git a/Food Pack - Oct 2019/Fries.fbx b/Food Pack - Oct 2019/Fries.fbx[m
+[1mnew file mode 100644[m
+[1mindex 0000000..6f7f621[m
+Binary files /dev/null and b/Food Pack - Oct 2019/Fries.fbx differ
+[1mdiff --git a/kitchen gltf items/food_ingredient_carrot_chopped.gltf.import b/Food Pack - Oct 2019/Fries.fbx.import[m
+[1msimilarity index 65%[m
+[1mrename from kitchen gltf items/food_ingredient_carrot_chopped.gltf.import[m
+[1mrename to Food Pack - Oct 2019/Fries.fbx.import[m
+[1mindex 787907c..dd40fbd 100644[m
+[1m--- a/kitchen gltf items/food_ingredient_carrot_chopped.gltf.import[m	
+[1m+++ b/Food Pack - Oct 2019/Fries.fbx.import[m	
+[36m@@ -3,13 +3,13 @@[m
+ importer="scene"[m
+ importer_version=1[m
+ type="PackedScene"[m
+[31m-uid="uid://bjhwblkadl7eq"[m
+[31m-path="res://.godot/imported/food_ingredient_carrot_chopped.gltf-39f916ab8c932183de93e23ef1a26d9a.scn"[m
+[32m+[m[32muid="uid://dklxs3ts48v7m"[m
+[32m+[m[32mpath="res://.godot/imported/Fries.fbx-d922c00126fa47ced9e8e4c235cdda5d.scn"[m
+ [m
+ [deps][m
+ [m
+[31m-source_file="res://kitchen gltf items/food_ingredient_carrot_chopped.gltf"[m
+[31m-dest_files=["res://.godot/imported/food_ingredient_carrot_chopped.gltf-39f916ab8c932183de93e23ef1a26d9a.scn"][m
+[32m+[m[32msource_file="res://Food Pack - Oct 2019/Fries.fbx"[m
+[32m+[m[32mdest_files=["res://.godot/imported/Fries.fbx-d922c00126fa47ced9e8e4c235cdda5d.scn"][m
+ [m
+ [params][m
+ [m
+[36m@@ -28,10 +28,11 @@[m [mmeshes/force_disable_compression=false[m
+ skins/use_named_skins=true[m
+ animation/import=true[m
+ animation/fps=30[m
+[31m-animation/trimming=false[m
+[32m+[m[32manimation/trimming=true[m
+ animation/remove_immutable_tracks=true[m
+ animation/import_rest_as_RESET=false[m
+ import_script/path=""[m
+ _subresources={}[m
+[31m-gltf/naming_version=1[m
+[31m-gltf/embedded_image_handling=1[m
+[32m+[m[32mfbx/importer=0[m
+[32m+[m[32mfbx/allow_geometry_helper_nodes=false[m
+[32m+[m[32mfbx/embedded_image_handling=1[m
+[1mdiff --git a/Food Pack - Oct 2019/Hotdog.fbx b/Food Pack - Oct 2019/Hotdog.fbx[m
+[1mnew file mode 100644[m
+[1mindex 0000000..2f87b77[m
+Binary files /dev/null and b/Food Pack - Oct 2019/Hotdog.fbx differ
+[1mdiff --git a/Food Pack - Oct 2019/Hotdog.fbx.import b/Food Pack - Oct 2019/Hotdog.fbx.import[m
+[1mnew file mode 100644[m
+[1mindex 0000000..d556770[m
+[1m--- /dev/null[m
+[1m+++ b/Food Pack - Oct 2019/Hotdog.fbx.import[m	
+[36m@@ -0,0 +1,38 @@[m
+[32m+[m[32m[remap][m
+[32m+[m
+[32m+[m[32mimporter="scene"[m
+[32m+[m[32mimporter_version=1[m
+[32m+[m[32mtype="PackedScene"[m
+[32m+[m[32muid="uid://bpvkwgvtlhjg1"[m
+[32m+[m[32mpath="res://.godot/imported/Hotdog.fbx-e63c0fc40c35846708f9f5c80dea08fb.scn"[m
+[32m+[m
+[32m+[m[32m[deps][m
+[32m+[m
+[32m+[m[32msource_file="res://Food Pack - Oct 2019/Hotdog.fbx"[m
+[32m+[m[32mdest_files=["res://.godot/imported/Hotdog.fbx-e63c0fc40c35846708f9f5c80dea08fb.scn"][m
+[32m+[m
+[32m+[m[32m[params][m
+[32m+[m
+[32m+[m[32mnodes/root_type=""[m
+[32m+[m[32mnodes/root_name=""[m
+[32m+[m[32mnodes/apply_root_scale=true[m
+[32m+[m[32mnodes/root_scale=1.0[m
+[32m+[m[32mnodes/import_as_skeleton_bones=false[m
+[32m+[m[32mnodes/use_node_type_suffixes=true[m
+[32m+[m[32mmeshes/ensure_tangents=true[m
+[32m+[m[32mmeshes/generate_lods=true[m
+[32m+[m[32mmeshes/create_shadow_meshes=true[m
+[32m+[m[32mmeshes/light_baking=1[m
+[32m+[m[32mmeshes/lightmap_texel_size=0.2[m

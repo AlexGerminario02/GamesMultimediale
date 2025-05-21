@@ -1,0 +1,42 @@
+[gd_scene load_steps=4 format=3 uid="uid://trlsxrrh58af"]
+
+[ext_resource type="Script" uid="uid://cubyviji2glxu" path="res://script/food.gd" id="1_tu00f"]
+[ext_resource type="PackedScene" uid="uid://n8ywesgkdadq" path="res://Food Pack - Oct 2019/Pizza_Slice.fbx" id="2_tu00f"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xlju3"]
+size = Vector3(0.465088, 0.154182, 0.470703)
+
+[node name="pizza" type="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 0.965926, -0.258819, 0, 0.258819, 0.965926, 0, 0, 0)
+collision_layer = 8
+script = ExtResource("1_tu00f")
+
+[node name="Pizza_Slice" parent="." instance=ExtResource("2_tu00f")]
+transform = Transform3D(0.185355, -0.0257553, -0.0705711, 0.00191182, 0.189435, -0.0641139, 0.0750996, 0.0587445, 0.17581, -0.0256583, 0.0479736, -0.00871874)
+
+[node name="Pizza_Slice2" parent="." instance=ExtResource("2_tu00f")]
+transform = Transform3D(0.106558, 0, -0.16925, 0, 0.2, 0, 0.16925, 0, 0.106558, 0.00738275, 0, 0.00147656)
+
+[node name="Pizza_Slice3" parent="." instance=ExtResource("2_tu00f")]
+transform = Transform3D(-0.0858154, 0, -0.180654, 0, 0.2, 0, 0.180654, 0, -0.0858154, 0.00738275, 0, 0.00147656)
+
+[node name="Pizza_Slice4" parent="." instance=ExtResource("2_tu00f")]
+transform = Transform3D(-0.198743, 0, -0.0223874, 0, 0.2, 0, 0.0223874, 0, -0.198743, 0.00738275, 0, 0.00147656)
+
+[node name="Pizza_Slice5" parent="." instance=ExtResource("2_tu00f")]
+transform = Transform3D(0.076772, 0, 0.184678, 0, 0.2, 0, -0.184678, 0, 0.076772, 0.00738275, 0, 0.00147656)
+
+[node name="Pizza_Slice6" parent="." instance=ExtResource("2_tu00f")]
+transform = Transform3D(-0.119287, 0, 0.160532, 0, 0.2, 0, -0.160532, 0, -0.119287, 0.00738275, 0, 0.00147656)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00531006, 0.0691108, 0.000732422)
+shape = SubResource("BoxShape3D_xlju3")
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1.04, 0, 0, 0, 1.04, 0, 0, 0, 1.04, 0.00531006, 0.0691108, 0.000732422)
+shape = SubResource("BoxShape3D_xlju3")
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]

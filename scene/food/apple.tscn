@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://dgq7hpxpkk1d6"]
+
+[ext_resource type="Script" uid="uid://cubyviji2glxu" path="res://script/food.gd" id="1_imsye"]
+[ext_resource type="PackedScene" uid="uid://b8xspwgs82m3q" path="res://kitchen food gltf/applered.glb" id="2_imsye"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_xlju3"]
+radius = 0.17028
+
+[node name="apple" type="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.135453, 0)
+collision_layer = 8
+script = ExtResource("1_imsye")
+
+[node name="applered2" parent="." instance=ExtResource("2_imsye")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00876439, 0.0187809, 0)
+shape = SubResource("SphereShape3D_xlju3")
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1.04, 0, 0, 0, 1.04, 0, 0, 0, 1.04, 0.00876439, 0.0187809, 0)
+shape = SubResource("SphereShape3D_xlju3")
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]

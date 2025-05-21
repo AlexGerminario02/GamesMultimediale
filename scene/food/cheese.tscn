@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://ck06n20irkpch"]
+
+[ext_resource type="Script" uid="uid://cubyviji2glxu" path="res://script/food.gd" id="1_ncq88"]
+[ext_resource type="PackedScene" uid="uid://c1vt8skqo8f8m" path="res://kitchen gltf items/food_ingredient_cheese_chopped.gltf" id="2_ncq88"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hepeg"]
+size = Vector3(0.136719, 0.110657, 0.149353)
+
+[node name="cheese" type="StaticBody3D"]
+collision_layer = 8
+script = ExtResource("1_ncq88")
+
+[node name="food_ingredient_cheese_chopped2" parent="." instance=ExtResource("2_ncq88")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0.0303297, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0395508, 0.0511758, 0.000484634)
+shape = SubResource("BoxShape3D_hepeg")
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1.04, 0, 0, 0, 1.04, 0, 0, 0, 1.04, -0.0395508, 0.0511758, 0.000484634)
+shape = SubResource("BoxShape3D_hepeg")
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]

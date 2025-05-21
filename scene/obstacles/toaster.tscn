@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://dlah1451jq5xp"]
+
+[ext_resource type="PackedScene" uid="uid://cl0pee5og2nyx" path="res://kitchen food gltf/toaster.glb" id="1_h178x"]
+[ext_resource type="Script" uid="uid://deenyb6mr4het" path="res://script/obstacles.gd" id="1_t3j7k"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_h178x"]
+size = Vector3(0.607178, 0.373047, 0.324219)
+
+[node name="toaster" type="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.177064, 0)
+collision_layer = 2
+script = ExtResource("1_t3j7k")
+
+[node name="toaster2" parent="." instance=ExtResource("1_h178x")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0185399, -0.00695238, 0)
+shape = SubResource("BoxShape3D_h178x")
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1.04, 0, 0, 0, 1.04, 0, 0, 0, 1.04, 0.0185399, -0.00695238, 0)
+shape = SubResource("BoxShape3D_h178x")
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]
